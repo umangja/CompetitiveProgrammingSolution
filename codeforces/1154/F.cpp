@@ -1,7 +1,7 @@
 /*input
-5 1 4
+5 1 1
 2 5 7 4 6
-2 2
+1 0
 
 
 
@@ -147,7 +147,7 @@ int solve()
 	rep(i,0,m)
 	{
 		ll x,y;cin>>x>>y;
-		if(k%x==0 && y==x)
+		if(k%x==0 && y==0)
 		{
 			cout<<"0";
 			return 0;
