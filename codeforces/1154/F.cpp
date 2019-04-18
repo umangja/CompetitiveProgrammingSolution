@@ -1,7 +1,7 @@
 /*input
-10 1 10
-2 5 7 4 6 5 1 23 65 98
-3 3
+5 1 4
+2 5 7 4 6
+2 2
 
 
 
@@ -147,11 +147,11 @@ int solve()
 	rep(i,0,m)
 	{
 		ll x,y;cin>>x>>y;
-		// if(k%x==0 && y==x)
-		// {
-		// 	cout<<"0";
-		// 	return 0;
-		// }
+		if(k%x==0 && y==x)
+		{
+			cout<<"0";
+			return 0;
+		}
 		if(x<=k)
 			o.pb(mp(x,y));
 	}
