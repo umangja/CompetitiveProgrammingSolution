@@ -2,10 +2,9 @@
 7 5
 3 2 5 4
 0
-3 2 1 5
+2 1 2
 1 1
 2 6 7
-
 
 */
 
@@ -15,95 +14,117 @@
 using namespace std;
 #define ll          long long
 #define pb          push_back
+#define	endl		'\n'
 #define pii         pair<ll int,ll int>
-#define vpii        vector< pii >
 #define vi          vector<ll int>
+#define is_empty(v) v.empty()
 #define vs			vector< string >
-#define vvi         vector< vector< ll > >
-#define inf			1e18
+#define vvi			vector< vector< ll,ll > >
 #define all(it,a)   for(auto it=(a).begin();it!=(a).end();it++) 
 #define F           first
 #define S           second
 #define sz(x)       (ll int)x.size()
+#define inf         1000000007
 #define rep(i,a,b)	for(ll int i=a;i<b;i++)
 #define repr(i,a,b) for(ll int i=a;i>b;i--)
+#define reprr(i,a,b) for(ll int i=a;i>=b;i--)
 #define lbnd        lower_bound
 #define ubnd        upper_bound
+#define bs          binary_search
 #define mp          make_pair
-#define graph(n)    adj(n,vector< ll > () )
-//mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+#define sum(v)      accumulate(v.begin(),v.end(),(ll)0)
+//map <long long int,long long int> ma;
+//set <long long int, greater <long long int> > s;
+
+struct subset
+{
+	ll parent;
+	ll rank;
+};
 const ll N =5e5+5;
-vpii subsets(N);
-vi siz(N,1);
+struct subset subsets[N];
 
-void init()
+ll find(ll x)
 {
-	rep(i,0,N)
-		subsets[i]=mp(i,0);
+	if(subsets[x].parent!=x)
+	{
+		subsets[x].parent =  find(subsets[x].parent);	
+	}
+
+	return subsets[x].parent;
 }
 
-ll find_parent(ll x)
+void unio(ll x,ll y)
 {
-	if(subsets[x].F!=x)
-		return subsets[x].F=find_parent(subsets[x].F);
-	return x;
-}
+	ll xr = find(x);
+	ll yr = find(y);
 
-void merge(ll x,ll y)
-{
-	ll x_p = find_parent(x);
-	ll y_p = find_parent(y);
-
-	if(x_p==y_p)
-		return;
-
-	if(subsets[x_p].S<subsets[y_p].S)
-	{
-		subsets[x_p].F=y_p;
-		siz[y_p]+=siz[x_p];		
-	}
-	else if(subsets[x_p].S>subsets[y_p].S)
-	{
-		subsets[y_p].F=x_p;
-		siz[x_p]+=siz[y_p];		
-	}
+	if(subsets[xr].rank<subsets[yr].rank)
+		subsets[xr].parent = yr;
+	else if(subsets[xr].rank>subsets[yr].rank)
+		subsets[yr].parent = xr;
 	else
 	{
-		subsets[x_p].F=y_p;
-		subsets[y_p].S++;
-		siz[y_p]+=siz[x_p];		
+		subsets[yr].parent = xr;
+		subsets[xr].rank++;
 	}
 
-	return;
 }
+
 
 int solve()
 {
-	init();
+	rep(i,0,N)
+	{
+		subsets[i].parent = i;
+		subsets[i].rank = 0; 
+	}
+
 	ll n,m;cin>>n>>m;
 	rep(i,0,m)
 	{
-		ll k,f;cin>>k;
+		ll k;cin>>k;
+		ll bs;
 		if(k>=1)
-			cin>>f;
-		rep(j,0,k-1)
 		{
-			ll x;cin>>x;
-			merge(x,f);
+			cin>>bs;bs--;
+		}
+
+		rep(i,0,k-1)
+		{
+			ll b;cin>>b;b--;
+			unio(bs,b);
 		}
 	}
 
-	rep(i,1,n+1)
+	set< ll > p;
+	rep(i,0,n)
 	{
-		cout<<siz[find_parent(i)]<<" ";
+		ll pp = find(i);
+		p.insert(pp);
 	}
-	return 0;
+
+	ll ds = sz(p);
+	vector< ll > v(n);
+	rep(i,0,n)
+		v[i]=0;
+	rep(i,0,n)
+	{
+		ll pt = find(i);
+		v[pt]++;
+	}
+
+	rep(i,0,n)
+	{
+		ll pt = find(i);
+		cout<<v[pt]<<" ";
+	}
+
+
 }
 
 int main()
 {
-	auto start = chrono::high_resolution_clock::now();
-
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
@@ -112,8 +133,4 @@ int main()
 	//cin>>t;
 	while(t--)
 		solve();
-
-	auto stop = chrono::high_resolution_clock::now();
-	auto duration = chrono::duration_cast<chrono::milliseconds>(stop-start);
-	// cout<<"\nduration: "<<(double)duration.count()<<" milliseconds";
 }
