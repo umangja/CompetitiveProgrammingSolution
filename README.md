@@ -879,7 +879,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 39 | [A - Kyoya and Colored Balls](https://codeforces.com/contest/553/problem/A) | [GNU C++17](./codeforces/553/A.cpp) | `combinatorics` `dp` `math` `*1500` | May/31/2019 12:54 | 
 38 | [B - Password](https://codeforces.com/contest/126/problem/B) | [GNU C++17](./codeforces/126/B.cpp) | `binary search` `dp` `hashing` `string suffix structures` `strings` `*1700` | May/29/2019 19:57 | 
 37 | [B - Color the Fence](https://codeforces.com/contest/349/problem/B) | [GNU C++17](./codeforces/349/B.cpp) | `data structures` `dp` `greedy` `implementation` `*1700` | May/26/2019 13:41 | 
-36 | [D - Caesar's Legions](https://codeforces.com/contest/118/problem/D) | [GNU C++17](./codeforces/118/D.cpp) | `dp` `*1700` | May/26/2019 13:03 | 
+36 | [D - Caesar's Legions](https://codeforces.com/contest/118/problem/D) | [GNU C++17](./codeforces/118/D.cpp) | `dp` `*1700` | May/26/2019 13:09 | 
 35 | [A - Reposts](https://codeforces.com/contest/522/problem/A) | [GNU C++17](./codeforces/522/A.cpp) | `*special problem` `dfs and similar` `dp` `graphs` `trees` `*1200` | May/25/2019 15:34 | 
 34 | [A - DZY Loves Sequences](https://codeforces.com/contest/446/problem/A) | [GNU C++17](./codeforces/446/A.cpp) | `dp` `implementation` `two pointers` `*1600` | May/25/2019 12:27 | 
 33 | [D - Flowers](https://codeforces.com/contest/474/problem/D) | [GNU C++17](./codeforces/474/D.cpp) | `dp` `*1700` | May/24/2019 13:13 | 

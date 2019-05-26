@@ -1,5 +1,5 @@
 /*input
-2 4 1 1
+100 100 10 10 
 */
 
 
@@ -33,7 +33,7 @@ using namespace std;
 ll n1,n2,k1,k2;
 ll mod=1e8;
 ll dp[101][101][2];
-
+ll cont=0;
 void init()
 {
 	rep(i,0,101)
@@ -47,9 +47,14 @@ void init()
 		}
 	}
 }
+void g()
+{
+	return ;
+}
 
 ll fun(ll i,ll j,ll k)
 {
+	cont++;
 	// cout<<i<<" "<<j<<" "<<k<<"\n";
 	if(dp[i][j][k]!=-1)
 		return dp[i][j][k];
@@ -79,6 +84,8 @@ ll fun(ll i,ll j,ll k)
 	}
 
 	dp[i][j][k]=ans%mod;
+	rep(i,1,1000000)
+		g();
 	// cout<<ans;
 	return ans%mod;
 
@@ -89,6 +96,7 @@ int solve()
 	init();
 	cin>>n1>>n2>>k1>>k2;
 	cout<<(fun(n1,n2,0)+fun(n1,n2,1))%mod;
+	// cout<<"\n"<<cont;
 }
 
 int main()
