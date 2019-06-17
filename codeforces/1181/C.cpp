@@ -18,90 +18,130 @@ llorrrrvzz
 using namespace std;
 #define ll          long long
 #define pb          push_back
+#define	endl		'\n'
 #define pii         pair<ll int,ll int>
-#define vpii        vector< pii >
 #define vi          vector<ll int>
+#define is_empty(v) v.empty()
 #define vs			vector< string >
-#define vvi         vector< vector< ll > >
-#define inf			(ll)1e18
+#define vvi			vector< vector< ll,ll > >
 #define all(it,a)   for(auto it=(a).begin();it!=(a).end();it++) 
 #define F           first
 #define S           second
 #define sz(x)       (ll int)x.size()
+#define inf         1000000007
 #define rep(i,a,b)	for(ll int i=a;i<b;i++)
 #define repr(i,a,b) for(ll int i=a;i>b;i--)
+#define reprr(i,a,b) for(ll int i=a;i>=b;i--)
 #define lbnd        lower_bound
 #define ubnd        upper_bound
+#define bs          binary_search
 #define mp          make_pair
-#define whatis(x)   cout << #x << " is " << x << "\n";
-#define graph(n)    adj(n,vector< ll > () )
-//mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+#define sum(v)      accumulate(v.begin(),v.end(),(ll)0)
+//map <long long int,long long int> ma;
+//set <long long int, greater <long long int> > s;
 
-const ll N = 1005;
-vector<vector<char> > mat(N,vector<char> (N,'#'));
-ll height_up[N][N];
-ll height_down[N][N];
-ll rgt[N][N];
+ll n,m;
+char v[1001][1001];
+ll dp2[1001][1001];
+ll dp3[1001][1001];
+
+void init()
+{
+	rep(i,0,1001)
+	{
+		rep(j,0,1001)
+		{
+			dp2[i][j]=1;
+			dp3[i][j]=1;
+		}
+	}
+}
+
 
 int solve()
 {
-	ll n,m;cin>>n>>m;
-	rep(i,1,n+1) rep(j,1,m+1){
-		cin>>mat[i][j];
-		if(mat[i][j]==mat[i][j-1]) rgt[i][j]=rgt[i][j-1]+1;
-		else rgt[i][j]=1;
-	}
-
-	rep(j,1,m+1) rep(i,1,n+1){
-		if(mat[i][j]==mat[i-1][j]) height_up[i][j]=height_up[i-1][j]+1;
-		else height_up[i][j]=1;
-	}
-
-
-	rep(j,1,m+1) for(ll i=n;i>=1;i--) {
-		if(mat[i][j]==mat[i+1][j]) height_down[i][j]=height_down[i+1][j]+1;
-		else height_down[i][j]=1;
-	}
-
-	// rep(i,1,n+1) {rep(j,1,m+1) cout<<height_up[i][j]<<" ";cout<<"\n";}
-	ll ans=0;
-	rep(i,1,n)
+	init();
+	cin>>n>>m;
+	rep(i,0,n)
 	{
-		rep(j,1,m+1)
+		rep(j,0,m)
 		{
-			if(mat[i][j]!=mat[i+1][j])
-			{
-				ll h1 = height_up[i][j];
-				if(height_up[i-h1][j]>=h1 && height_down[i+1][j]>=h1)
-				{
-					ll mn=inf;
-					for(ll k = max(i-2*h1+1,(ll)1);k<=min(i+h1,n);k++) mn=min(mn,rgt[k][j]);
-					ans+=mn; 
-				}
+			cin>>v[i][j];
+		}	
+	}
 
-			}
+	ll ans=0;
+	rep(i,0,n)
+	{
+		rep(j,0,m)
+		{
+			if(j-1>=0 && v[i][j]==v[i][j-1])
+				dp2[i][j] = dp2[i][j-1]+1; 
+			else
+				dp2[i][j]=1;	
+
+		}
+	}
+
+	rep(i,0,n)
+	{
+		rep(j,0,m)
+		{
+			if(i-1>=0 && v[i][j]==v[i-1][j])
+				dp3[i][j] = dp3[i-1][j]+1;
+			else
+				dp3[i][j]=1; 
+		}
+	}
+
+	// rep(i,0,n)
+	// {
+	// 	rep(j,0,m)
+	// 	{
+	// 		cout<<i<<" "<<j<<" "<<dp2[i][j]<<"\n";
+	// 		cout<<i<<" "<<j<<" "<<dp3[i][j]<<"\n";
+			
+
+	// 	}
+	// }
+
+	rep(i,0,n)
+	{
+		rep(j,0,m)
+		{
+			ll s = dp3[i][j];
+			// if(i==8 && j==5)
+				// cout<<s<<" "<<dp3[i-s][j]<<" "<<dp3[i-2*s][j]<<"\n";
+			// cout<<s<<" "<<i<<"\n";
+			if(i-s<0 || dp3[i-s][j]!=s) continue;
+			if(i-2*s<0 || dp3[i-2*s][j]<s) continue;
+
+			ll mini = inf;
+			ll l = max(i-3*s,(ll)-1);
+			// ll l = i-3*s;
+			for(ll b = i;b>l;b--)
+				mini = min(mini,dp2[b][j]);
+
+			// cout<<i<<" "<<j<<" "<<s<<" "<<mini<<"\n";
+
+			ans+=mini;
+
 		}
 	}
 
 	cout<<ans;
 
-	return 0;
+
 }
 
 int main()
 {
-	auto start = chrono::high_resolution_clock::now();
-
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
 
-	ll test_cases=1;
-	//cin>>test_cases;
-	while(test_cases--)
+	ll t=1;
+	//cin>>t;
+	while(t--)
 		solve();
-
-	auto stop = chrono::high_resolution_clock::now();
-	auto duration = chrono::duration_cast<chrono::milliseconds>(stop-start);
-	// cout<<"\nduration: "<<(double)duration.count()<<" milliseconds";
 }
