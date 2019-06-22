@@ -2094,6 +2094,23 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF55934380": {
+    "contest_id": 1162,
+    "language": "GNU C++14",
+    "path": "codeforces/1162/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Chladni Figure",
+    "problem_url": "https://codeforces.com/contest/1162/problem/D",
+    "submission_id": "CF55934380",
+    "submission_url": "https://codeforces.com/contest/1162/submission/55934380",
+    "tags": [
+      "number theory",
+      "strings",
+      "*1900"
+    ],
+    "timestamp": "Jun/22/2019 18:41"
+  },
   "CF55955269": {
     "contest_id": 1156,
     "language": "GNU C++14",
