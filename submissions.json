@@ -2094,6 +2094,26 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF55957894": {
+    "contest_id": 1156,
+    "language": "GNU C++14",
+    "path": "codeforces/1156/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Ugly Pairs",
+    "problem_url": "https://codeforces.com/contest/1156/problem/B",
+    "submission_id": "CF55957894",
+    "submission_url": "https://codeforces.com/contest/1156/submission/55957894",
+    "tags": [
+      "dfs and similar",
+      "greedy",
+      "implementation",
+      "sortings",
+      "strings",
+      "*1800"
+    ],
+    "timestamp": "Jun/23/2019 13:38"
+  },
   "CF56034941": {
     "contest_id": 1143,
     "language": "GNU C++14",
