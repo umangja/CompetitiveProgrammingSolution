@@ -2094,6 +2094,23 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56043300": {
+    "contest_id": 1144,
+    "language": "GNU C++14",
+    "path": "codeforces/1144/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Two Shuffled Sequences",
+    "problem_url": "https://codeforces.com/contest/1144/problem/C",
+    "submission_id": "CF56043300",
+    "submission_url": "https://codeforces.com/contest/1144/submission/56043300",
+    "tags": [
+      "constructive algorithms",
+      "sortings",
+      "*1000"
+    ],
+    "timestamp": "Jun/25/2019 20:51"
+  },
   "CF56043903": {
     "contest_id": 1144,
     "language": "GNU C++14",
