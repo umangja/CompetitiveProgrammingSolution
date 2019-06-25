@@ -2094,6 +2094,25 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56048352": {
+    "contest_id": 1144,
+    "language": "GNU C++14",
+    "path": "codeforces/1144/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Median String",
+    "problem_url": "https://codeforces.com/contest/1144/problem/E",
+    "submission_id": "CF56048352",
+    "submission_url": "https://codeforces.com/contest/1144/submission/56048352",
+    "tags": [
+      "bitmasks",
+      "math",
+      "number theory",
+      "strings",
+      "*1900"
+    ],
+    "timestamp": "Jun/25/2019 23:13"
+  },
   "CF56050003": {
     "contest_id": 1140,
     "language": "GNU C++14",
