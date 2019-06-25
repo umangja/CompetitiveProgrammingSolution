@@ -38,12 +38,13 @@ int solve()
 	ll n;cin>>n;
 	vi a(n);
 	ll ans=0;
-	ll l=-1;
+	ll stop=-1;
 	rep(i,0,n)
 	{
 		cin>>a[i];
-		l=max(l,a[i]);
-		if(l==i+1)
+		stop = max(a[i],stop);
+
+		if(i+1==stop)
 			ans++;
 	}
 
