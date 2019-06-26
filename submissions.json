@@ -2094,6 +2094,23 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56060913": {
+    "contest_id": 1140,
+    "language": "GNU C++14",
+    "path": "codeforces/1140/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Good String",
+    "problem_url": "https://codeforces.com/contest/1140/problem/B",
+    "submission_id": "CF56060913",
+    "submission_url": "https://codeforces.com/contest/1140/submission/56060913",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1200"
+    ],
+    "timestamp": "Jun/26/2019 10:54"
+  },
   "CF56061670": {
     "contest_id": 1140,
     "language": "GNU C++14",
