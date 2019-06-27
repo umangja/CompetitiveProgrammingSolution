@@ -2094,6 +2094,22 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56156326": {
+    "contest_id": 1141,
+    "language": "GNU C++14",
+    "path": "codeforces/1141/F1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F1",
+    "problem_name": "Same Sum Blocks (Easy)",
+    "problem_url": "https://codeforces.com/contest/1141/problem/F1",
+    "submission_id": "CF56156326",
+    "submission_url": "https://codeforces.com/contest/1141/submission/56156326",
+    "tags": [
+      "greedy",
+      "*1900"
+    ],
+    "timestamp": "Jun/27/2019 15:52"
+  },
   "CF56160743": {
     "contest_id": 1141,
     "language": "GNU C++14",
