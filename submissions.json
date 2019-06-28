@@ -2094,6 +2094,26 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56188754": {
+    "contest_id": 1133,
+    "language": "GNU C++14",
+    "path": "codeforces/1133/F2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F2",
+    "problem_name": "Spanning Tree with One Fixed Degree",
+    "problem_url": "https://codeforces.com/contest/1133/problem/F2",
+    "submission_id": "CF56188754",
+    "submission_url": "https://codeforces.com/contest/1133/submission/56188754",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "greedy",
+      "*1900"
+    ],
+    "timestamp": "Jun/28/2019 11:56"
+  },
   "CF56192994": {
     "contest_id": 1186,
     "language": "GNU C++14",
