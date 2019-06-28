@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56227892": {
+    "contest_id": 1138,
+    "language": "GNU C++14",
+    "path": "codeforces/1138/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Sushi for Two",
+    "problem_url": "https://codeforces.com/contest/1138/problem/A",
+    "submission_id": "CF56227892",
+    "submission_url": "https://codeforces.com/contest/1138/submission/56227892",
+    "tags": [
+      "binary search",
+      "greedy",
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Jun/28/2019 18:48"
+  },
   "CF56230073": {
     "contest_id": 1138,
     "language": "GNU C++14",
