@@ -2094,6 +2094,25 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56233945": {
+    "contest_id": 1138,
+    "language": "GNU C++14",
+    "path": "codeforces/1138/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Camp Schedule",
+    "problem_url": "https://codeforces.com/contest/1138/problem/D",
+    "submission_id": "CF56233945",
+    "submission_url": "https://codeforces.com/contest/1138/submission/56233945",
+    "tags": [
+      "greedy",
+      "hashing",
+      "string suffix structures",
+      "strings",
+      "*1600"
+    ],
+    "timestamp": "Jun/28/2019 20:51"
+  },
   "CF56253470": {
     "contest_id": 1138,
     "language": "GNU C++14",
