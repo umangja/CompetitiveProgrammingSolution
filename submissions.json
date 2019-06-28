@@ -2094,6 +2094,23 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56227111": {
+    "contest_id": 1186,
+    "language": "GNU C++14",
+    "path": "codeforces/1186/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Vus the Cossack and Strings",
+    "problem_url": "https://codeforces.com/contest/1186/problem/C",
+    "submission_id": "CF56227111",
+    "submission_url": "https://codeforces.com/contest/1186/submission/56227111",
+    "tags": [
+      "implementation",
+      "math",
+      "*1800"
+    ],
+    "timestamp": "Jun/28/2019 18:36"
+  },
   "CF56227892": {
     "contest_id": 1138,
     "language": "GNU C++14",
