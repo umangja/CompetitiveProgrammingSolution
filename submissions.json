@@ -2094,6 +2094,23 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56232308": {
+    "contest_id": 1138,
+    "language": "GNU C++14",
+    "path": "codeforces/1138/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Skyscrapers",
+    "problem_url": "https://codeforces.com/contest/1138/problem/C",
+    "submission_id": "CF56232308",
+    "submission_url": "https://codeforces.com/contest/1138/submission/56232308",
+    "tags": [
+      "implementation",
+      "sortings",
+      "*1600"
+    ],
+    "timestamp": "Jun/28/2019 20:13"
+  },
   "CF56233945": {
     "contest_id": 1138,
     "language": "GNU C++14",
