@@ -4771,6 +4771,23 @@
     ],
     "timestamp": "Jun/29/2019 13:11"
   },
+  "CF56261747": {
+    "contest_id": 1132,
+    "language": "GNU C++14",
+    "path": "codeforces/1132/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Discounts",
+    "problem_url": "https://codeforces.com/contest/1132/problem/B",
+    "submission_id": "CF56261747",
+    "submission_url": "https://codeforces.com/contest/1132/submission/56261747",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Jun/29/2019 13:50"
+  },
   "CF56271124": {
     "contest_id": 1132,
     "language": "GNU C++14",
