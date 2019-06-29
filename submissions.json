@@ -2094,6 +2094,25 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56253470": {
+    "contest_id": 1138,
+    "language": "GNU C++14",
+    "path": "codeforces/1138/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Cooperative Game",
+    "problem_url": "https://codeforces.com/contest/1138/problem/F",
+    "submission_id": "CF56253470",
+    "submission_url": "https://codeforces.com/contest/1138/submission/56253470",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "interactive",
+      "math",
+      "*2400"
+    ],
+    "timestamp": "Jun/29/2019 10:32"
+  },
   "CF56259347": {
     "contest_id": 1139,
     "language": "GNU C++14",
