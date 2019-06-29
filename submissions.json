@@ -2094,6 +2094,22 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF56271124": {
+    "contest_id": 1132,
+    "language": "GNU C++14",
+    "path": "codeforces/1132/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Painting the Fence",
+    "problem_url": "https://codeforces.com/contest/1132/problem/C",
+    "submission_id": "CF56271124",
+    "submission_url": "https://codeforces.com/contest/1132/submission/56271124",
+    "tags": [
+      "brute force",
+      "*1700"
+    ],
+    "timestamp": "Jun/29/2019 17:38"
+  },
   "CF56273720": {
     "contest_id": 1132,
     "language": "GNU C++14",
