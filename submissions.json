@@ -4871,6 +4871,24 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF56309975": {
+    "contest_id": 1114,
+    "language": "GNU C++14",
+    "path": "codeforces/1114/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Yet Another Array Partitioning Task",
+    "problem_url": "https://codeforces.com/contest/1114/problem/B",
+    "submission_id": "CF56309975",
+    "submission_url": "https://codeforces.com/contest/1114/submission/56309975",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "sortings",
+      "*1500"
+    ],
+    "timestamp": "Jun/30/2019 19:46"
+  },
   "CF56312213": {
     "contest_id": 1187,
     "language": "GNU C++14",
