@@ -1,5 +1,5 @@
 /*input
-1000000000000000000 42
+4 2
 */
 
 
@@ -38,28 +38,13 @@ void mul(vvi &a,vvi &b)
 		{
 			ans[i][j]=0;
 			rep(k,0,m)
-			{
-				ll l = (a[i][k]*b[k][j])%MOD;
-				ans[i][j]+=l;
-				if(a[i][j]>=MOD)
-					a[i][j]-=MOD;
-			}
+				ans[i][j]=(ans[i][j]%MOD+((a[i][k]%MOD)*(b[k][j]%MOD))%MOD)%MOD;
 		}
 	}
 
 	rep(i,0,m)
-	{
 		rep(j,0,m)
-		{
-			
-		}
-	}
-
-
-
-	rep(i,0,m)
-		rep(j,0,m)
-			v[i][j]=ans[i][j]%MOD;
+			v[i][j]=ans[i][j];
 }
 
 
@@ -84,11 +69,7 @@ ll power(ll y)
 
 	ll s=0;
 	rep(j,0,m)
-	{
-		s+=v[0][j];
-		if(s>=MOD)
-			s-=MOD;
-	}
+		s=(s%MOD+v[0][j]%MOD)%MOD;
 	return s;
 }
 
