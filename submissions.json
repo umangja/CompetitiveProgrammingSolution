@@ -4871,6 +4871,22 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF56295248": {
+    "contest_id": 1117,
+    "language": "GNU C++14",
+    "path": "codeforces/1117/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Magic Ship",
+    "problem_url": "https://codeforces.com/contest/1117/problem/C",
+    "submission_id": "CF56295248",
+    "submission_url": "https://codeforces.com/contest/1117/submission/56295248",
+    "tags": [
+      "binary search",
+      "*1900"
+    ],
+    "timestamp": "Jun/30/2019 10:51"
+  },
   "CF56296250": {
     "contest_id": 1117,
     "language": "GNU C++14",
