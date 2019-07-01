@@ -4871,6 +4871,22 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF56378829": {
+    "contest_id": 1114,
+    "language": "GNU C++14",
+    "path": "codeforces/1114/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Flood Fill",
+    "problem_url": "https://codeforces.com/contest/1114/problem/D",
+    "submission_id": "CF56378829",
+    "submission_url": "https://codeforces.com/contest/1114/submission/56378829",
+    "tags": [
+      "dp",
+      "*1900"
+    ],
+    "timestamp": "Jul/01/2019 13:08"
+  },
   "CF56386189": {
     "contest_id": 1114,
     "language": "GNU C++14",
