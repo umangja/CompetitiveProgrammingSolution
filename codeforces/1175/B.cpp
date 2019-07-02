@@ -1,14 +1,17 @@
 /*input
-9
-add
-for 43
-end
-for 10
-for 15
-add
-end
+11
+for 100
+for 100
+for 100
+for 100
+for 100
 add
 end
+end
+end
+end
+end
+
 
 */
 
@@ -18,82 +21,71 @@ end
 using namespace std;
 #define ll          long long
 #define pb          push_back
-#define	endl		'\n'
 #define pii         pair<ll int,ll int>
+#define vppi        vector< pii >
 #define vi          vector<ll int>
-#define is_empty(v) v.empty()
 #define vs			vector< string >
-#define vvi			vector< vector< ll,ll > >
+#define vvi         vector< vector< ll > >
+#define inf			1e18;
 #define all(it,a)   for(auto it=(a).begin();it!=(a).end();it++) 
 #define F           first
 #define S           second
 #define sz(x)       (ll int)x.size()
-#define inf         1000000007
 #define rep(i,a,b)	for(ll int i=a;i<b;i++)
 #define repr(i,a,b) for(ll int i=a;i>b;i--)
-#define reprr(i,a,b) for(ll int i=a;i>=b;i--)
 #define lbnd        lower_bound
 #define ubnd        upper_bound
-#define bs          binary_search
 #define mp          make_pair
-#define sum(v)      accumulate(v.begin(),v.end(),(ll)0)
-//map <long long int,long long int> ma;
-//set <long long int, greater <long long int> > s;
+#define graph(n)    adj(n,vector< ll > () )
+//mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
-ll of=1;
+
 int solve()
 {
-	rep(i,0,32)
-	{
+	ll l,f=0;cin>>l;ll x=0;
+	stack< ll > st;string s;
+	st.push(1);
+
+	ll of=1;
+	rep(i,1,33)
 		of*=2;
-	}
 	of--;
 
-	ll n;cin>>n;
-	stack<  ll > d;
-	stack<  ll > o; 
-	d.push(1);
-	o.push(0);
-	ll ans=0;
-	
-	rep(i,0,n)
+	while(l--)
 	{
-		string s;cin>>s;
+		cin>>s;
 		if(s=="add")
 		{
-			ans+=d.top();
-			if(ans>of || o.top()==1)
+			x+=st.top();
+			if(x>of)
 			{
-				cout<<"OVERFLOW!!!";
-				return 0;
+				f=1;
+				break;
 			}
 		}
 		else if(s=="for")
 		{
-			ll x;cin>>x;
-			ll f =1;
-			f = o.top();
-			if((x*d.top())>of || f==1)
-				o.push(1);
+			ll n;cin>>n;
+			if(n*st.top()>of)
+				st.push(2*of);
 			else
-				o.push(0);
-			d.push(x*d.top());
+				st.push(n*st.top());
+				
 		}
 		else
-		{
-			d.pop();
-			o.pop();
-		}
+			st.pop();
 	}
-
-	if(ans>of)
-		cout<<"OVERFLOW!!!";
+	if(!f)
+		cout<<x;
 	else
-		cout<<ans;
+		cout<<"OVERFLOW!!!";
+	return 0;
 }
 
 int main()
 {
+	auto start = chrono::high_resolution_clock::now();
+
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
@@ -102,4 +94,8 @@ int main()
 	//cin>>t;
 	while(t--)
 		solve();
+
+	auto stop = chrono::high_resolution_clock::now();
+	auto duration = chrono::duration_cast<chrono::milliseconds>(stop-start);
+	// cout<<"\nduration: "<<(double)duration.count()<<" milliseconds";
 }
