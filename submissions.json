@@ -4871,6 +4871,24 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF56476106": {
+    "contest_id": 932,
+    "language": "GNU C++14",
+    "path": "codeforces/932/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Tree",
+    "problem_url": "https://codeforces.com/contest/932/problem/D",
+    "submission_id": "CF56476106",
+    "submission_url": "https://codeforces.com/contest/932/submission/56476106",
+    "tags": [
+      "binary search",
+      "dp",
+      "trees",
+      "*2200"
+    ],
+    "timestamp": "Jul/03/2019 18:43"
+  },
   "CF56484607": {
     "contest_id": 609,
     "language": "GNU C++14",
