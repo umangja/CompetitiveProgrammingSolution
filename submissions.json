@@ -4871,6 +4871,24 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF56459231": {
+    "contest_id": 1175,
+    "language": "GNU C++14",
+    "path": "codeforces/1175/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Electrification",
+    "problem_url": "https://codeforces.com/contest/1175/problem/C",
+    "submission_id": "CF56459231",
+    "submission_url": "https://codeforces.com/contest/1175/submission/56459231",
+    "tags": [
+      "binary search",
+      "brute force",
+      "greedy",
+      "*1600"
+    ],
+    "timestamp": "Jul/03/2019 11:28"
+  },
   "CF56460526": {
     "contest_id": 1175,
     "language": "GNU C++14",
