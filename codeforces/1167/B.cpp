@@ -1,5 +1,8 @@
 /*input
-
+368
+672
+64
+128
 */
 
 
@@ -8,111 +11,84 @@
 using namespace std;
 #define ll          long long
 #define pb          push_back
-#define	endl		'\n'
 #define pii         pair<ll int,ll int>
+#define vpii        vector< pii >
 #define vi          vector<ll int>
-#define is_empty(v) v.empty()
 #define vs			vector< string >
-#define vvi			vector< vector< ll,ll > >
+#define vvi         vector< vector< ll > >
+#define inf			1e18
 #define all(it,a)   for(auto it=(a).begin();it!=(a).end();it++) 
 #define F           first
 #define S           second
 #define sz(x)       (ll int)x.size()
-#define inf         1000000007
 #define rep(i,a,b)	for(ll int i=a;i<b;i++)
 #define repr(i,a,b) for(ll int i=a;i>b;i--)
-#define reprr(i,a,b) for(ll int i=a;i>=b;i--)
 #define lbnd        lower_bound
 #define ubnd        upper_bound
-#define bs          binary_search
 #define mp          make_pair
-#define sum(v)      accumulate(v.begin(),v.end(),(ll)0)
-//map <long long int,long long int> ma;
-//set <long long int, greater <long long int> > s;
+#define graph(n)    adj(n,vector< ll > () )
+//mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
-ll q(ll i,ll j)
+vi a = {4,8,15,16,23,42};
+set< ll > s={4,8,15,16,23,42};
+ll ans;
+
+ll query(ll i,ll j)
 {
 	cout<<"? "<<i<<" "<<j<<"\n";
-	cout<<flush;
-	ll ans;cin>>ans;
-	if(ans==0)
-	{
-		exit(0);
-	}
-	else
-		return ans;
+	cout.flush();
+	cin>>ans;
+	return ans;
 }
 
-vi v = {4,8,15,16,23,42};
 int solve()
 {
-	set< ll > s;
-	s.insert(4);
-	s.insert(8);
-	s.insert(16);
-	s.insert(15);
-	s.insert(23);
-	s.insert(42);
+	vi v(4);
+	rep(i,0,4)
+		v[i]=query(1,i+2);
 
-	vi ans(6);
-	ll a1 = q(1,2);
-	ll a2 = q(1,3);
-	ll a3 = q(1,4);
-	ll a4 = q(1,5);
-
-	ll f=0;
 	rep(i,0,6)
 	{
-		rep(j,0,6)
+		ll f=1;
+		ll j=0;
+		for(;j<4;j++)
 		{
-			if(v[i]*v[j]==a1)
-			{
-				if(((a2*1.0)/v[i] == (a2)/v[i]) && ((a3*1.0)/v[i] == (a3)/v[i]) && ((a4*1.0)/v[i] == (a4)/v[i]))
-				{
-					if( s.find((a2)/v[i])!=s.end() && s.find((a3)/v[i])!=s.end() && s.find((a4)/v[i])!=s.end() )
-					{
-						ans[0]=v[i];
-						f=1;
-						break;
-
-					}
-				}
-			}
+			if(v[j]%a[i]!=0 || find(a.begin(), a.end(),v[j]/a[i])==a.end())
+				f=0;
 		}
+
 		if(f)
-			break;
+		{
+			ll a1=a[i],a2=v[0]/a1,a3=v[1]/a1,a4=v[2]/a1,a5=v[3]/a1;
+			s.erase(a1);
+			s.erase(a2);
+			s.erase(a3);
+			s.erase(a4);
+			s.erase(a5);
+			ll a6 = *s.begin();
+
+			cout<<"! "<<a1<<" "<<a2<<" "<<a3<<" "<<a4<<" "<<a5<<" "<<a6<<"\n";
+			cout.flush();
+			exit(0);
+		}
 	}
-
-	ans[1]=a1/ans[0];
-	ans[2]=a2/ans[0];
-	ans[3]=a3/ans[0];
-	ans[4]=a4/ans[0];
-
-	rep(i,0,5)
-	{
-		s.erase(ans[i]);
-	}
-
-	ans[5]=*s.begin();
-
-	cout<<"! ";
-	rep(i,0,6)
-		cout<<ans[i]<<" ";
-	cout<<"\n"<<flush;
-
-
-
-
+	return 0;
 }
 
 int main()
 {
-	ios_base::sync_with_stdio(false);
-	cin.tie(0);
-	cout.tie(0);
+	auto start = chrono::high_resolution_clock::now();
+
+	// ios_base::sync_with_stdio(false);
+	// cin.tie(0);
+	// cout.tie(0);
 
 	ll t=1;
 	//cin>>t;
 	while(t--)
 		solve();
+
+	auto stop = chrono::high_resolution_clock::now();
+	auto duration = chrono::duration_cast<chrono::milliseconds>(stop-start);
+	// cout<<"\nduration: "<<(double)duration.count()<<" milliseconds";
 }
