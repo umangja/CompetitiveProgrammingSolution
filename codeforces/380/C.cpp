@@ -74,14 +74,6 @@ struct node query(ll l,ll r){
 	return combine(ans1,ans2);
 }
 
-void modify(ll p,char c){
-	struct node ans;ans.a=0;ans.b=0;ans.c=0;
-	if(c=='(') ans.c=1;
-	else ans.b=1;
-
-	for(t[p+=n]=ans;p>>=1;) t[p] = combine(t[p<<1],t[p<<1|1]);
-}
-
 
 int solve()
 {
@@ -98,7 +90,6 @@ int solve()
 	while(q--)
 	{
 		ll l,r;cin>>l>>r;
-		modify(l-1,s[l-1]);
 		cout<<2*query(l-1,r).a<<"\n";
 	}
 	return 0;
