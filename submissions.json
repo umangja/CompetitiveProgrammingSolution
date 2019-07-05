@@ -4871,6 +4871,22 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF56590073": {
+    "contest_id": 1189,
+    "language": "GNU C++14",
+    "path": "codeforces/1189/D1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D1",
+    "problem_name": "Add on a Tree",
+    "problem_url": "https://codeforces.com/contest/1189/problem/D1",
+    "submission_id": "CF56590073",
+    "submission_url": "https://codeforces.com/contest/1189/submission/56590073",
+    "tags": [
+      "trees",
+      "*1600"
+    ],
+    "timestamp": "Jul/05/2019 22:31"
+  },
   "CF56594782": {
     "contest_id": 1189,
     "language": "GNU C++14",
