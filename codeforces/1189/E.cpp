@@ -28,9 +28,10 @@ using namespace std;
 #define graph(n)    adj(n,vector< ll > () )
 //mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
+map< ll,ll > m;
 int solve()
 {
-	ll n,p,k,x,d,ans=0,cnt=1;cin>>n>>p>>k;
+	ll n,p,k,x,d,ans=0;cin>>n>>p>>k;
 	vi a(n);
 	rep(i,0,n)
 	{
@@ -40,15 +41,14 @@ int solve()
 		if((d*=k)>p) d%=p;
 
 		a[i]=(x-d+p)%p;
+		m[a[i]]++;
 	}
-	sort(a.begin(), a.end());
-	ll last=-1;
-	rep(i,0,n)
+	all(it,m)
 	{
-		if(a[i]==last) cnt++;
-		else last=a[i],ans+=((cnt*(cnt-1))>>1),cnt=1;
+		x=it->S;
+		ans+=(x*(x-1))/2;
 	}
-	cout<<(ans+=((cnt*(cnt-1))>>1));
+	cout<<ans;
 	return 0;
 }
 
