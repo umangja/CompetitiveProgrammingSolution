@@ -4871,6 +4871,22 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF56596078": {
+    "contest_id": 1189,
+    "language": "GNU C++14",
+    "path": "codeforces/1189/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Count Pairs",
+    "problem_url": "https://codeforces.com/contest/1189/problem/E",
+    "submission_id": "CF56596078",
+    "submission_url": "https://codeforces.com/contest/1189/submission/56596078",
+    "tags": [
+      "number theory",
+      "*2300"
+    ],
+    "timestamp": "Jul/06/2019 01:03"
+  },
   "CF56609434": {
     "contest_id": 145,
     "language": "GNU C++14",
