@@ -54,15 +54,20 @@ void modify(ll p,ll v){
 
 bool check_vertex(ll l,ll x){
 	ll count=0,vertex;
-	while(l<n){
-		count=0;
-		if(t[l<<1]%x!=0) count++,vertex=(l<<1);
-		if(t[l<<1|1]%x!=0) count++,vertex=(l<<1|1);
-		if(count==0) return true;
-		if(count>=2) return false;
-		l=vertex;
-	}
-	return true;
+	if(l>=n) return true;
+	if(t[l<<1]%x!=0) count++,vertex=(l<<1);
+	if(t[l<<1|1]%x!=0) count++,vertex=(l<<1|1);
+
+	if(count==0) 
+		return true;
+	if(count>=2)
+		return false;
+	// while(l<n){
+		// if(t[l<<1]%x==0)
+	// }
+
+
+	return check_vertex(vertex,x);
 }
 
 bool query(ll l,ll r,ll x){
