@@ -1,17 +1,15 @@
 /*input
-12
-1 9 1
-1 8 1
-1 7 1
-1 6 1
-1 1 1
-1 2 1
-1 3 1
-1 4 1
-2 5 1
-3 12 1
-3 14 2
-3 15 999999999
+10
+1 1 1000000000
+1 4 1000000000
+2 2 1000000000
+1 5 1000000000
+1 8 1000000000
+2 15 1000000000
+3 3 1000000000
+3 10 1000000000
+3 6 1000000000
+3 7 1000000000
 
 */
 
@@ -39,9 +37,9 @@ using namespace std;
 #define whatis(x)   cout << #x << " is " << x << "\n";
 #define graph(n)    adj(n,vector< ll > () )
 //mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-map<ll,map<ll,ll> > bit;
-const ll N = 1e9+9;
 
+const ll N = 1e5+5;
+map<ll,ll> bit[N];
 void add(ll tm,ll idx,ll val)
 {
 	for(;tm<N;tm+=tm&-tm)
@@ -59,9 +57,24 @@ ll prefix_sum(ll tm,ll idx)
 int solve()
 {
 	ll n;cin>>n;
+	vi q1(n),q2(n),q3(n);
+	set<ll> times;
 	rep(i,0,n)
 	{
 		ll a,t,x;cin>>a>>t>>x;
+		q1[i]=a;q2[i]=t;q3[i]=x;
+		times.insert(t);
+	}
+	map< ll,ll > m;
+	ll cur=1;
+	all(it,times)
+	{
+		m[*it]=cur;
+		cur++;
+	}
+	rep(i,0,n)
+	{
+		ll a=q1[i],t=m[q2[i]],x=q3[i];
 		if(a==1) add(t,x,1);
 		if(a==2) add(t,x,-1);
 		if(a==3) cout<<prefix_sum(t,x)<<"\n";
