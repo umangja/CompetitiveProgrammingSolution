@@ -62,9 +62,9 @@ ll f(ll n)
 
 	rep(i,0,nd)
 	{
-		ans2[i] = (i-1>=0?ans2[i-1]:0)+(d[i]*power_10[2*i])%mod;
+		ans2[i] = ((i-1>=0?ans2[i-1]:0)+(d[i]*power_10[2*i])%mod)%mod;
 		if(ans2[i]>=mod) ans2[i]-=mod;
-		ans2[i] = ans2[i]+(d[i]*power_10[2*i+1])%mod;
+		ans2[i] = (ans2[i]+(d[i]*power_10[2*i+1])%mod)%mod;
 		if(ans2[i]>=mod) ans2[i]-=mod;
 	}
 
@@ -72,6 +72,8 @@ ll f(ll n)
 	{
 		if(j>=nd)
 		{
+			// whatis(j);
+			// whatis(sz(v[j]))
 			ans = (ans+(ans2[nd-1]*sz(v[j]))%mod)%mod;
 			if(ans>mod) ans-=mod;
 		}
