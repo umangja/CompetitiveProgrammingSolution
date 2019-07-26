@@ -4871,6 +4871,24 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF57807816": {
+    "contest_id": 797,
+    "language": "GNU C++14",
+    "path": "codeforces/797/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Minimal string",
+    "problem_url": "https://codeforces.com/contest/797/problem/C",
+    "submission_id": "CF57807816",
+    "submission_url": "https://codeforces.com/contest/797/submission/57807816",
+    "tags": [
+      "data structures",
+      "greedy",
+      "strings",
+      "*1700"
+    ],
+    "timestamp": "Jul/26/2019 21:23"
+  },
   "CF57828600": {
     "contest_id": 797,
     "language": "GNU C++14",
