@@ -4871,6 +4871,25 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF57781984": {
+    "contest_id": 792,
+    "language": "GNU C++14",
+    "path": "codeforces/792/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Divide by Three",
+    "problem_url": "https://codeforces.com/contest/792/problem/C",
+    "submission_id": "CF57781984",
+    "submission_url": "https://codeforces.com/contest/792/submission/57781984",
+    "tags": [
+      "dp",
+      "greedy",
+      "math",
+      "number theory",
+      "*2000"
+    ],
+    "timestamp": "Jul/26/2019 11:49"
+  },
   "CF57785648": {
     "contest_id": 792,
     "language": "GNU C++14",
