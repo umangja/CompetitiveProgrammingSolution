@@ -4871,6 +4871,22 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF57830648": {
+    "contest_id": 803,
+    "language": "GNU C++14",
+    "path": "codeforces/803/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Maximal Binary Matrix",
+    "problem_url": "https://codeforces.com/contest/803/problem/A",
+    "submission_id": "CF57830648",
+    "submission_url": "https://codeforces.com/contest/803/submission/57830648",
+    "tags": [
+      "constructive algorithms",
+      "*1400"
+    ],
+    "timestamp": "Jul/27/2019 11:23"
+  },
   "CF57831068": {
     "contest_id": 803,
     "language": "GNU C++14",
