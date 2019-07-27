@@ -4871,6 +4871,24 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF57833002": {
+    "contest_id": 803,
+    "language": "GNU C++14",
+    "path": "codeforces/803/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Maximal GCD",
+    "problem_url": "https://codeforces.com/contest/803/problem/C",
+    "submission_id": "CF57833002",
+    "submission_url": "https://codeforces.com/contest/803/submission/57833002",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*1900"
+    ],
+    "timestamp": "Jul/27/2019 12:09"
+  },
   "CF57876441": {
     "contest_id": 1061,
     "language": "GNU C++14",
