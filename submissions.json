@@ -4871,6 +4871,23 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF57828600": {
+    "contest_id": 797,
+    "language": "GNU C++14",
+    "path": "codeforces/797/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Broken BST",
+    "problem_url": "https://codeforces.com/contest/797/problem/D",
+    "submission_id": "CF57828600",
+    "submission_url": "https://codeforces.com/contest/797/submission/57828600",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "*2100"
+    ],
+    "timestamp": "Jul/27/2019 10:29"
+  },
   "CF57829294": {
     "contest_id": 797,
     "language": "GNU C++14",
