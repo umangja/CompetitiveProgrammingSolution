@@ -4871,6 +4871,23 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF57945544": {
+    "contest_id": 756,
+    "language": "GNU C++14",
+    "path": "codeforces/756/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Travel Card",
+    "problem_url": "https://codeforces.com/contest/756/problem/B",
+    "submission_id": "CF57945544",
+    "submission_url": "https://codeforces.com/contest/756/submission/57945544",
+    "tags": [
+      "binary search",
+      "dp",
+      "*1600"
+    ],
+    "timestamp": "Jul/29/2019 19:41"
+  },
   "CF57949417": {
     "contest_id": 711,
     "language": "GNU C++14",
