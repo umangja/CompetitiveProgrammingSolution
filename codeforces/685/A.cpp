@@ -1,5 +1,5 @@
 /*input
-344 344
+1 1
 */
 
 
@@ -28,37 +28,11 @@ using namespace std;
 //mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 const ll base = 7;
-ll n,m;
-ll pn=0,pm=0,cnt=0;
-ll po[7];
-vi fq(7);
-
-void dfs(ll pos,ll flag)
-{
-	if(pos==(pn+pm))
-	{
-		ll ans1=0,ans2=0;
-		rep(i,0,pn) ans1+=(ll)po[i]*(ll)pow(7,i);
-		rep(i,pn,pn+pm) ans2+=(ll)po[i]*(ll)pow(7,i-pn);
-
-		if(ans1<n && ans2<m)
-		{
-			rep(i,0,7) fq[i]=0;
-			rep(i,0,pn+pm) fq[po[i]]++;		
-			if(*max_element(fq.begin(), fq.end())==1) cnt++;
-		}
-		return ;
-	}
-	else
-	{
-		rep(i,0,7) if(!(flag&(1<<i))) po[pos]=i,dfs(pos+1,flag|(1<<i));
-		return ;
-	}
-}
-
+ll dp[base][base];
 int solve()
 {
-	cin>>n>>m;
+	ll n,m;cin>>n>>m;
+	ll pn=0,pm=0,cnt=0;
 	ll dup=n-1;
 	if(!dup) pn=1;
 	while(dup) dup/=7,pn++;
@@ -69,8 +43,27 @@ int solve()
 
 	if(pn+pm>7) cout<<"0";
 	else
-	{dfs(0,0);
-	cout<<cnt;}
+	{
+		rep(i,0,n)
+		{
+			rep(j,0,m)
+			{
+				ll dup1=i,dup2=j;
+				vi n1(pn,0),n2(pm,0);
+				ll k1=0;
+				bool flag=true;
+				while(dup1) n1[k1]=(dup1%7),dup1/=7,k1++;
+				k1=0;
+				while(dup2) n2[k1]=(dup2%7),dup2/=7,k1++;
+				vi fq(7,0);
+				rep(k,0,sz(n1)) fq[n1[k]]++;
+				rep(k,0,sz(n2)) fq[n2[k]]++;
+				rep(k,0,7) if(fq[k]>1) flag=false; 
+				if(flag) cnt++;
+			}
+		}
+		cout<<cnt;
+	}
 	return 0;
 }
 
