@@ -4871,6 +4871,23 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF58039683": {
+    "contest_id": 1199,
+    "language": "GNU C++14",
+    "path": "codeforces/1199/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Welfare State",
+    "problem_url": "https://codeforces.com/contest/1199/problem/D",
+    "submission_id": "CF58039683",
+    "submission_url": "https://codeforces.com/contest/1199/submission/58039683",
+    "tags": [
+      "data structures",
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Jul/31/2019 00:37"
+  },
   "CF58040122": {
     "contest_id": 1199,
     "language": "GNU C++14",
