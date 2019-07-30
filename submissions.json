@@ -4871,6 +4871,23 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF58004400": {
+    "contest_id": 1199,
+    "language": "GNU C++14",
+    "path": "codeforces/1199/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Water Lily",
+    "problem_url": "https://codeforces.com/contest/1199/problem/B",
+    "submission_id": "CF58004400",
+    "submission_url": "https://codeforces.com/contest/1199/submission/58004400",
+    "tags": [
+      "geometry",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Jul/30/2019 20:31"
+  },
   "CF58039683": {
     "contest_id": 1199,
     "language": "GNU C++14",
