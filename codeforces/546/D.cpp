@@ -1,44 +1,81 @@
+/*input
+2
+3 1
+6 3
+
+*/
+
+
+//assic value of ('0'-'9') is(48 - 57) and (a-z) is (97-122) and (A-Z) is(65-90) and 32 for space
 #include<bits/stdc++.h>
 using namespace std;
+#define ll          long long
+#define pb          push_back
+#define pii         pair<ll int,ll int>
+#define vpii        vector< pii >
+#define vi          vector<ll int>
+#define vs			vector< string >
+#define vvi         vector< vector< ll > >
+#define inf			(ll)1e18
+#define all(it,a)   for(auto it=(a).begin();it!=(a).end();it++) 
+#define F           first
+#define S           second
+#define sz(x)       (ll int)x.size()
+#define rep(i,a,b)	for(ll int i=a;i<b;i++)
+#define repr(i,a,b) for(ll int i=a;i>b;i--)
+#define lbnd        lower_bound
+#define ubnd        upper_bound
+#define mp          make_pair
+#define whatis(x)   cout << #x << " is " << x << "\n";
+#define graph(n)    adj(n,vector< ll > () )
+//mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
-const long long int N = 5e6+6;
-vector< long long int > lpf(N,0),npf(N);
-
+const ll N =5e6+5;
+ll f[N];
+ll lpf[N],npf[N];
 void fun()
 {
-	for(long long int i=2;i<=N;i++)
-	{
-		if(lpf[i]==0)
-		{
+	for(ll i=2;i<N;i++) 
+		if (!lpf[i]) {
 			lpf[i]=i;
-			for(long long j=i*i;j<=N;j+=i)
-				lpf[j]=i;
+			for(ll j=i*i;j<N;j+=i) if(!lpf[j]) lpf[j]=i;
 		}
-	}
 
-	npf[1]=0;
-	for(long long int i=2;i<=N;i++)
-	{
-		npf[i]=npf[i/lpf[i]]+1;
-	}
+	f[1]=npf[1]=0;
+	for(ll i=2;i<N;i++)
+		npf[i]=1+npf[i/lpf[i]];
 
-	for(long long int i=2;i<=N;i++)
-		npf[i]+=npf[i-1];
+	for(ll i=2;i<N;i++)
+		f[i]=npf[i]+f[i-1];
 }
-void solve()
+
+
+int solve()
 {
-	long long int a,b;
-	scanf("%lld %lld",&a,&b);
-	cout<<npf[a]-npf[b]<<"\n";
-	return ;
+	ll t;cin>>t;
+	fun();
+	while(t--)
+	{
+		ll a,b;cin>>a>>b;
+		cout<<f[a]-f[b]<<"\n";
+	}
+	return 0;
 }
 
 int main()
 {
-	fun();
-	// cout<<npf[3]<<" "<<npf[6];
-	long long int t;cin>>t;
-	while(t--)
+	auto start = chrono::high_resolution_clock::now();
+
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
+	ll test_cases=1;
+	//cin>>test_cases;
+	while(test_cases--)
 		solve();
-	return 0;
+
+	auto stop = chrono::high_resolution_clock::now();
+	auto duration = chrono::duration_cast<chrono::milliseconds>(stop-start);
+	// cout<<"\nduration: "<<(double)duration.count()<<" milliseconds";
 }
