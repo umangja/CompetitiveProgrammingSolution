@@ -4871,6 +4871,23 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF58823749": {
+    "contest_id": 8,
+    "language": "GNU C++14",
+    "path": "codeforces/8/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Looking for Order",
+    "problem_url": "https://codeforces.com/contest/8/problem/C",
+    "submission_id": "CF58823749",
+    "submission_url": "https://codeforces.com/contest/8/submission/58823749",
+    "tags": [
+      "bitmasks",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Aug/14/2019 20:29"
+  },
   "CF58825100": {
     "contest_id": 1051,
     "language": "GNU C++14",
