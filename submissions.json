@@ -4871,6 +4871,23 @@
     ],
     "timestamp": "Jun/30/2019 10:19"
   },
+  "CF59446737": {
+    "contest_id": 363,
+    "language": "GNU C++14",
+    "path": "codeforces/363/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Fixing Typos",
+    "problem_url": "https://codeforces.com/contest/363/problem/C",
+    "submission_id": "CF59446737",
+    "submission_url": "https://codeforces.com/contest/363/submission/59446737",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Aug/25/2019 19:10"
+  },
   "CF59447525": {
     "contest_id": 450,
     "language": "GNU C++14",
