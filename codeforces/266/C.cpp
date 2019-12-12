@@ -3,34 +3,23 @@
 */
 
 
-// assic value of ('0'-'9') is(48 - 57) and (a-z) is (97-122) and (A-Z) is(65-90) and 32 for space
-// #pragma GCC target ("avx2")
-// #pragma GCC optimization ("O3")
-// #pragma GCC optimization ("unroll-loops")
+//assic value of ('0'-'9') is(48 - 57) and (a-z) is (97-122) and (A-Z) is(65-90) and 32 for space
 #include<bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
-
-// order_of_key (k) : Number of items strictly smaller than k .
-// find_by_order(k) : K-th element in a set (counting from zero).
-using namespace __gnu_pbds;
-template<class T> using oset=tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-
-#define ll          long long int
+#define ll          long long
 #define pb          push_back
-#define pii         pair<ll ,ll >
+#define pii         pair<ll int,ll int>
 #define vpii        vector< pii >
-#define vi          vector<ll >
+#define vi          vector<ll int>
 #define vs			vector< string >
 #define vvi         vector< vector< ll > >
 #define inf			(ll)1e18
 #define all(it,a)   for(auto it=(a).begin();it!=(a).end();it++) 
 #define F           first
 #define S           second
-#define sz(x)       (ll )x.size()
-#define rep(i,a,b)	for(ll  i=a;i<b;i++)
-#define repr(i,a,b) for(ll  i=a;i>b;i--)
+#define sz(x)       (ll int)x.size()
+#define rep(i,a,b)	for(ll int i=a;i<b;i++)
+#define repr(i,a,b) for(ll int i=a;i>b;i--)
 #define lbnd        lower_bound
 #define ubnd        upper_bound
 #define mp          make_pair
@@ -38,82 +27,92 @@ template<class T> using oset=tree<T, null_type, less<T>, rb_tree_tag, tree_order
 #define graph(n)    adj(n,vector< ll > () )
 //mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
-#define debug(x)     cout << #x << " " << x << endl;
-#define debug_p(x)   cout << #x << " " << x.F << " " << x.S << endl;
-#define debug_v(x)   {cout << #x << " "; for (auto ioi : x) cout << ioi << " "; cout << endl;}
-#define debug_vp(x)  {cout << #x << " "; for (auto ioi : x) cout << '[' << ioi.F << " " << ioi.S << ']'; cout << endl;}
-#define debug_v_v(x) {cout << #x << "/*\n"; for (auto ioi : x) { for (auto ioi2 : ioi) cout << ioi2 << " "; cout << '\n';} cout << "*/" << #x << endl;}
-
-struct node
-{
-	ll t,s,f;
-	node(ll tt,ll ss,ll ff)
-	{
-		t=tt; s=ss; f=ff;
-	}
-};
-
-void fun(vvi &mat,ll c1,ll c2)
-{
-	rep(i,0,sz(mat)) swap(mat[i][c1],mat[i][c2]);
-	return ;
-}
 
 int solve()
 {
 	ll n;cin>>n;
 	vvi mat(n,vi (n,0));
-	rep(i,0,n-1)
+
+	rep(i,0,n-1) 
 	{
 		ll x,y;cin>>x>>y;
 		x--,y--;
 		mat[x][y]=1;
 	}
 
-	vi rows(n,0);
-	rep(i,0,n) rep(j,0,n) rows[i]+=mat[i][j];
-	// debug_v(rows);
-	vector< node > ans;
-	rep(i,0,n) rep(j,i+1,n) if( rows[i]>rows[j] ) swap(rows[i],rows[j]),swap(mat[i],mat[j]),ans.pb(node(1,i,j));
+	// rep(i,0,n) {rep(j,0,n) cout<<mat[i][j]<<" "; cout<<"\n";} cout<<"\n";
+
+
+	vector< pair< ll,pii > > ans;
+	vi row(n,0);
+	rep(i,0,n) rep(j,0,n) row[i]+=mat[i][j];
+
+
 	
-	ll ff = n-2;
-	// debug_v_v(mat);
+	ll tot=0;	
 
-	repr(i,n-1,-1)
-	{
-		repr(j,n-1,-1)
-		{
-			if( j>=i  && mat[i][j]==1)
-			{
-				while( ff>=0 && mat[i][ff]==1) ff--;
-				if(ff>=0) fun(mat,j,ff);
-				ans.pb(node(2,j,ff--));
-				while( ff>=0 && mat[i][ff]==1) ff--;
-			}
-			else if(j<i)
-			{
-				if(mat[i][j]==1)
-				{
-					if(j<ff)
-					{
-						while( ff>=0 && mat[i][ff]==1) ff--;
-						if(ff>=0) fun(mat,j,ff);
-						ans.pb(node(2,j,ff--));
-						while( ff>=0 && mat[i][ff]==1) ff--;
-					}
-					else if(j==ff) ff--;
-
-				}
-			}
-		}
-
-		// debug_v_v(mat);
-
+	rep(i,0,n) rep(j,i,n) if(row[i] > row[j] && i!=j){
+		swap(mat[i],mat[j]);
+		swap(row[i],row[j]);
+		ans.pb(mp(1,mp(i,j)));
 	}
 
-	// debug_v_v(mat);
+	// sort(row.begin(), row.end());
+	rep(i,0,n)
+	{
+		rep(j,i,n)
+		{
+			if(row[j]+tot==i)
+			{
+				ll x = row[j];
+				tot+=x;
+				if(j!=i)
+				{
+					swap(mat[i],mat[j]);
+					swap(row[i],row[j]);
+					ans.pb(mp(1,mp(i,j)));
+				}
+				
+				rep(k,i-x,i)
+				{
+					if(mat[i][k]!=1)
+					{
+						rep(k1,i,n) if(mat[i][k1]==1)
+						{
+							ans.pb(mp(2,mp(k,k1)));
+							rep(s,0,n) swap(mat[s][k],mat[s][k1]);
+						} 
+					}
+				}
+
+				break;				
+			}
+
+			ll x = row[i];
+			rep(k,i,n)
+			{
+				if(mat[i][k]==1)
+				{
+					// if(i==7) cout<<"OK\n";
+					rep(k1,i-x,i) if(mat[i][k1]==0)
+					{
+						ans.pb(mp(2,mp(k,k1)));
+						rep(s,0,n) swap(mat[s][k],mat[s][k1]);
+					} 
+				}
+			}
+
+		}		
+	}
+
+	// rep(i,0,n) {rep(j,0,n) cout<<mat[i][j]<<" "; cout<<"\n";} cout<<"\n";
+
 	cout<<sz(ans)<<"\n";
-	rep(i,0,sz(ans)) cout<<ans[i].t<<" "<<ans[i].s+1<<" "<<ans[i].f+1<<"\n";
+	rep(i,0,sz(ans))
+	{
+		cout<<ans[i].F<<" "<<ans[i].S.F+1<<" "<<ans[i].S.S+1<<"\n";
+	}
+
 	return 0;
 }
 
@@ -132,5 +131,5 @@ int main()
 
 	auto stop = chrono::high_resolution_clock::now();
 	auto duration = chrono::duration_cast<chrono::milliseconds>(stop-start);
-	//cout<<"\nduration: "<<(double)duration.count()<<" milliseconds";
+	// cout<<"\nduration: "<<(double)duration.count()<<" milliseconds";
 }

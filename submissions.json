@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF66669436": {
+    "contest_id": 266,
+    "language": "GNU C++14",
+    "path": "codeforces/266/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Below the Diagonal",
+    "problem_url": "https://codeforces.com/contest/266/problem/C",
+    "submission_id": "CF66669436",
+    "submission_url": "https://codeforces.com/contest/266/submission/66669436",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*2100"
+    ],
+    "timestamp": "Dec/12/2019 14:08"
+  },
   "CF66670302": {
     "contest_id": 29,
     "language": "GNU C++14",
