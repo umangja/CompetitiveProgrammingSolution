@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF67118170": {
+    "contest_id": 1266,
+    "language": "GNU C++14",
+    "path": "codeforces/1266/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Spaceship Solitaire",
+    "problem_url": "https://codeforces.com/contest/1266/problem/E",
+    "submission_id": "CF67118170",
+    "submission_url": "https://codeforces.com/contest/1266/submission/67118170",
+    "tags": [
+      "data structures",
+      "greedy",
+      "implementation",
+      "*2100"
+    ],
+    "timestamp": "Dec/17/2019 22:58"
+  },
   "CF67144647": {
     "contest_id": 1263,
     "language": "GNU C++14",
