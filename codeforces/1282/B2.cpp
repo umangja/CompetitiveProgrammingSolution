@@ -30,27 +30,58 @@ using namespace std;
 
 int solve()
 {
-	ll n,t,k;cin>>n>>t>>k;
-	vi a(n);vpii dp(n,mp(0,0));
+	ll n,p,k;cin>>n>>p>>k;
+	vi a(n);
 	rep(i,0,n) cin>>a[i];
 	sort(a.begin(), a.end());
-	dp[0] = (a[0]<=t?mp(1,t-a[0]):mp(0,t));
-	rep(i,1,n)
-	{
-		if(a[i]>t)
-		{
-			dp[i]=dp[i-1];
-			continue;
-		} 
 
-		if(i-k>=0 && dp[i-k].S>=a[i]) dp[i] = max(dp[i],mp(dp[i-k].F+k,dp[i-k].S-a[i]));
-		if(i-k==-1 && a[i]<=t) dp[i] = mp(k,t-a[i]);
-		if(dp[i-1].S>=a[i]) dp[i] = max(dp[i],mp(dp[i-1].F+1,dp[i-1].S-a[i]));
-		dp[i]=max(dp[i],dp[i-1]);
+	ll low=0,high=n;
+	while(low<high)
+	{
+		ll mid = low+(high-low+1)/2;
+
+		ll temp=0;
+		ll i=mid-1;
+		while(i>=0)
+		{
+			if(i-k+1>=0)
+			{
+				temp+=a[i];
+				i-=k;
+			}
+			else
+			{
+				while(i>=0) temp+=a[i],i--;
+				break;
+			}
+		}
+
+		i = min(n-1,(((mid+k-1)/k)*k)-1);
+		// if(mid==3) whatis(i);
+		ll temf=0;
+		while(i>=0)
+		{
+			if(i-k+1>=0)
+			{
+				temf+=a[i];
+				i-=k;
+			}
+			else
+			{
+				while(i>=0) temf+=a[i],i--;
+				break;
+			}
+		}
+
+		// whatis(temf);
+
+		temp=min(temp,temf);
+
+		if(temp<=p) low=mid;
+		else high=mid-1;
 	}
-	// rep(i,0,n) cout<<dp[i].F<<" ";
-	// cout<<"\n";
-	cout<<dp[n-1].F<<"\n";
+
+	cout<<low<<"\n";
 	return 0;
 }
 
