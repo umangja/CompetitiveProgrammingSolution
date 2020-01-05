@@ -34,15 +34,6 @@ int solve()
 		cin>>cards[i];
 		exist.insert(cards[i]);
 	} 
-
-	map< pair<char,char>,char > hash;
-	hash[mp('S','E')]='T';
-	hash[mp('E','S')]='T';
-	hash[mp('S','T')]='E';
-	hash[mp('T','S')]='E';
-	hash[mp('E','T')]='S';
-	hash[mp('T','E')]='S';
-
  
 	ll ans=0;
  
@@ -55,8 +46,13 @@ int solve()
  
 			rep(f,0,k)
 			{
-				if(cards[i][f]==cards[j][f]) tar+=(cards[i][f]);
-				else tar+=hash[mp(cards[i][f],cards[j][f])];
+				if(cards[i][f]==cards[j][f]) tar.pb(cards[i][f]);
+				else
+				{
+					if((cards[i][f]=='S' && cards[j][f]=='E') || (cards[i][f]=='E' && cards[j][f]=='S') ) tar+='T';
+					else if((cards[i][f]=='S' && cards[j][f]=='T') || (cards[i][f]=='T' && cards[j][f]=='S') ) tar+='E';
+					else if((cards[i][f]=='E' && cards[j][f]=='T') || (cards[i][f]=='T' && cards[j][f]=='E') ) tar+='S';
+				}
 			}
  
 			if(exist.find(tar)!=exist.end()) ans++;
