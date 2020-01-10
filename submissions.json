@@ -2094,6 +2094,29 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF68549305": {
+    "contest_id": 1285,
+    "language": "GNU C++14",
+    "path": "codeforces/1285/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Dr. Evil Underscores",
+    "problem_url": "https://codeforces.com/contest/1285/problem/D",
+    "submission_id": "CF68549305",
+    "submission_url": "https://codeforces.com/contest/1285/submission/68549305",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "dfs and similar",
+      "divide and conquer",
+      "dp",
+      "greedy",
+      "strings",
+      "trees",
+      "*1900"
+    ],
+    "timestamp": "Jan/10/2020 21:35"
+  },
   "CF68846726": {
     "contest_id": 1288,
     "language": "GNU C++14",
