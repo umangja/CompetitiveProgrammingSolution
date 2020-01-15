@@ -2575,6 +2575,22 @@
     ],
     "timestamp": "Jan/27/2021 23:16"
   },
+  "AC9527353": {
+    "contest_id": "dwacon6th-prelims",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/dwacon6th-prelims/B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Fusing Slimes",
+    "problem_url": "https://atcoder.jp/contests/dwacon6th-prelims/tasks/dwacon6th_prelims_b",
+    "submission_id": "AC9527353",
+    "submission_url": "https://atcoder.jp/contests/dwacon6th-prelims/submissions/9527353",
+    "tags": [
+      "AtCoder",
+      "*600"
+    ],
+    "timestamp": "Jan/15/2020 22:12"
+  },
   "AC9538678": {
     "contest_id": "abc150",
     "language": "C++14 (GCC 5.4.1)",
