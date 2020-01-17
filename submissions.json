@@ -2575,6 +2575,22 @@
     ],
     "timestamp": "Jan/27/2021 23:16"
   },
+  "AC9542340": {
+    "contest_id": "abc150",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/abc150/E.cpp",
+    "platform": "AtCoder",
+    "problem_index": "E",
+    "problem_name": "Change a Little Bit",
+    "problem_url": "https://atcoder.jp/contests/abc150/tasks/abc150_e",
+    "submission_id": "AC9542340",
+    "submission_url": "https://atcoder.jp/contests/abc150/submissions/9542340",
+    "tags": [
+      "AtCoder",
+      "*500"
+    ],
+    "timestamp": "Jan/17/2020 09:20"
+  },
   "AC9562100": {
     "contest_id": "keyence2020",
     "language": "C++14 (GCC 5.4.1)",
