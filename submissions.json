@@ -2575,6 +2575,22 @@
     ],
     "timestamp": "Jan/27/2021 23:16"
   },
+  "AC9562100": {
+    "contest_id": "keyence2020",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/keyence2020/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "Painting",
+    "problem_url": "https://atcoder.jp/contests/keyence2020/tasks/keyence2020_a",
+    "submission_id": "AC9562100",
+    "submission_url": "https://atcoder.jp/contests/keyence2020/submissions/9562100",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Jan/18/2020 17:32"
+  },
   "AC9590602": {
     "contest_id": "keyence2020",
     "language": "C++14 (GCC 5.4.1)",
