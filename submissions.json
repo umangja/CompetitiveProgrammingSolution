@@ -2575,6 +2575,22 @@
     ],
     "timestamp": "Jan/27/2021 23:16"
   },
+  "AC9590602": {
+    "contest_id": "keyence2020",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/keyence2020/B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Robot Arms",
+    "problem_url": "https://atcoder.jp/contests/keyence2020/tasks/keyence2020_b",
+    "submission_id": "AC9590602",
+    "submission_url": "https://atcoder.jp/contests/keyence2020/submissions/9590602",
+    "tags": [
+      "AtCoder",
+      "*200"
+    ],
+    "timestamp": "Jan/19/2020 10:30"
+  },
   "AC9591145": {
     "contest_id": "keyence2020",
     "language": "C++14 (GCC 5.4.1)",
