@@ -2575,6 +2575,22 @@
     ],
     "timestamp": "Jan/27/2021 23:16"
   },
+  "AC9660736": {
+    "contest_id": "keyence2020",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/keyence2020/D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "Swap and Flip",
+    "problem_url": "https://atcoder.jp/contests/keyence2020/tasks/keyence2020_d",
+    "submission_id": "AC9660736",
+    "submission_url": "https://atcoder.jp/contests/keyence2020/submissions/9660736",
+    "tags": [
+      "AtCoder",
+      "*700"
+    ],
+    "timestamp": "Jan/21/2020 17:37"
+  },
   "AC9661372": {
     "contest_id": "abc144",
     "language": "C++14 (GCC 5.4.1)",
