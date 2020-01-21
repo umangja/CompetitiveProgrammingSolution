@@ -2575,6 +2575,22 @@
     ],
     "timestamp": "Jan/27/2021 23:16"
   },
+  "AC9661372": {
+    "contest_id": "abc144",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/abc144/C.cpp",
+    "platform": "AtCoder",
+    "problem_index": "C",
+    "problem_name": "Walk on Multiplication Table",
+    "problem_url": "https://atcoder.jp/contests/abc144/tasks/abc144_c",
+    "submission_id": "AC9661372",
+    "submission_url": "https://atcoder.jp/contests/abc144/submissions/9661372",
+    "tags": [
+      "AtCoder",
+      "*300"
+    ],
+    "timestamp": "Jan/21/2020 18:18"
+  },
   "AC9661957": {
     "contest_id": "abc144",
     "language": "C++14 (GCC 5.4.1)",
