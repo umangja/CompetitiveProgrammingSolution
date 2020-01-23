@@ -2575,6 +2575,22 @@
     ],
     "timestamp": "Jan/27/2021 23:16"
   },
+  "AC9690758": {
+    "contest_id": "abc142",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/abc142/B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Roller Coaster",
+    "problem_url": "https://atcoder.jp/contests/abc142/tasks/abc142_b",
+    "submission_id": "AC9690758",
+    "submission_url": "https://atcoder.jp/contests/abc142/submissions/9690758",
+    "tags": [
+      "AtCoder",
+      "*200"
+    ],
+    "timestamp": "Jan/23/2020 23:09"
+  },
   "AC9709357": {
     "contest_id": "abc141",
     "language": "C++14 (GCC 5.4.1)",
