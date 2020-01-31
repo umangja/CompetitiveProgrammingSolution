@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF69887249": {
+    "contest_id": 1036,
+    "language": "GNU C++14",
+    "path": "codeforces/1036/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Covered Points",
+    "problem_url": "https://codeforces.com/contest/1036/problem/E",
+    "submission_id": "CF69887249",
+    "submission_url": "https://codeforces.com/contest/1036/submission/69887249",
+    "tags": [
+      "fft",
+      "geometry",
+      "number theory",
+      "*2400"
+    ],
+    "timestamp": "Jan/31/2020 14:11"
+  },
   "CF70017349": {
     "contest_id": 1027,
     "language": "GNU C++14",
