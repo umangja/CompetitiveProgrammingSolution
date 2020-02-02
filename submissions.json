@@ -2094,6 +2094,22 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF70019934": {
+    "contest_id": 1027,
+    "language": "GNU C++14",
+    "path": "codeforces/1027/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Minimum Value Rectangle",
+    "problem_url": "https://codeforces.com/contest/1027/problem/C",
+    "submission_id": "CF70019934",
+    "submission_url": "https://codeforces.com/contest/1027/submission/70019934",
+    "tags": [
+      "greedy",
+      "*1600"
+    ],
+    "timestamp": "Feb/02/2020 15:01"
+  },
   "CF70026109": {
     "contest_id": 1027,
     "language": "GNU C++14",
