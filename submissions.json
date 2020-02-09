@@ -2575,6 +2575,22 @@
     ],
     "timestamp": "Jan/27/2021 23:16"
   },
+  "AC9972464": {
+    "contest_id": "abc154",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/abc154/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "Remaining Balls",
+    "problem_url": "https://atcoder.jp/contests/abc154/tasks/abc154_a",
+    "submission_id": "AC9972464",
+    "submission_url": "https://atcoder.jp/contests/abc154/submissions/9972464",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Feb/09/2020 17:32"
+  },
   "AC9974125": {
     "contest_id": "abc154",
     "language": "C++14 (GCC 5.4.1)",
