@@ -2094,6 +2094,23 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF70614630": {
+    "contest_id": 1000,
+    "language": "GNU C++14",
+    "path": "codeforces/1000/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Codehorses T-shirts",
+    "problem_url": "https://codeforces.com/contest/1000/problem/A",
+    "submission_id": "CF70614630",
+    "submission_url": "https://codeforces.com/contest/1000/submission/70614630",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Feb/09/2020 15:04"
+  },
   "CF70616200": {
     "contest_id": 1000,
     "language": "GNU C++14",
