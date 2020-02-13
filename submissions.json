@@ -2094,6 +2094,23 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF70929526": {
+    "contest_id": 1303,
+    "language": "GNU C++14",
+    "path": "codeforces/1303/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Fill The Bag",
+    "problem_url": "https://codeforces.com/contest/1303/problem/D",
+    "submission_id": "CF70929526",
+    "submission_url": "https://codeforces.com/contest/1303/submission/70929526",
+    "tags": [
+      "bitmasks",
+      "greedy",
+      "*1900"
+    ],
+    "timestamp": "Feb/13/2020 09:57"
+  },
   "CF70955861": {
     "contest_id": 962,
     "language": "GNU C++14",
