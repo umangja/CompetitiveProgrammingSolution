@@ -2094,6 +2094,22 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF71048545": {
+    "contest_id": 961,
+    "language": "GNU C++14",
+    "path": "codeforces/961/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Tetris",
+    "problem_url": "https://codeforces.com/contest/961/problem/A",
+    "submission_id": "CF71048545",
+    "submission_url": "https://codeforces.com/contest/961/submission/71048545",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Feb/14/2020 14:42"
+  },
   "CF71048938": {
     "contest_id": 961,
     "language": "GNU C++14",
