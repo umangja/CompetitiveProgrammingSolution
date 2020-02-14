@@ -1,4 +1,20 @@
 {
+  "AC10093975": {
+    "contest_id": "abc139",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/abc139/E.cpp",
+    "platform": "AtCoder",
+    "problem_index": "E",
+    "problem_name": "League",
+    "problem_url": "https://atcoder.jp/contests/abc139/tasks/abc139_e",
+    "submission_id": "AC10093975",
+    "submission_url": "https://atcoder.jp/contests/abc139/submissions/10093975",
+    "tags": [
+      "AtCoder",
+      "*500"
+    ],
+    "timestamp": "Feb/14/2020 22:25"
+  },
   "AC10128788": {
     "contest_id": "abc155",
     "language": "C++14 (GCC 5.4.1)",
