@@ -39,7 +39,7 @@ using namespace std;
 int solve()
 {
 	double r;cin>>r;
-	cout<<setprecision(10)<<2*acos(-1)*r<<"\n";
+	cout<<setprecision(25)<<2*acos(-1)*r<<"\n";
 	return 0;
 }
 
