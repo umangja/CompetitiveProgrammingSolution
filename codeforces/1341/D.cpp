@@ -38,11 +38,14 @@ using namespace std;
 
 const ll N = 2e3+3, K = 2e3+3;
 ll pos[N][K];
+ll dig[N][K];
+ll used[N][K];
+
 vi ans;
 vector< vpii > adj(N,vpii ());
 ll n,k;
 
-ll fun(ll p,ll k_left)
+inline ll fun(ll p,ll k_left)
 {
 	if(k_left<0) return 0;
 	if(p==n) return (k_left==0);
@@ -60,7 +63,7 @@ ll fun(ll p,ll k_left)
 		}
 	}
 
-	return pos[p][k_left] = 0;
+	return 0;
 }
 
 int solve()
@@ -81,7 +84,11 @@ int solve()
 	vs a(n);
 
 	ans.assign(n,-1);
+
 	memset(pos,-1,sizeof pos);
+	memset(dig,-1,sizeof dig);
+	memset(dig,-1,sizeof dig);
+
 
 	rep(i,0,n)
 	{
@@ -104,11 +111,48 @@ int solve()
 	}
 
 
+	for(ll p = n-1;p>=0;p--)
+	{
+		for(ll k_left = k;k_left>=0;k_left--)
+		{
+			rep(i,0,sz(adj[p]))
+			{
+				ll d = adj[p][i].F;
+				ll u = adj[p][i].S;
+
+				if(p==n-1)
+				{
+					if(k_left==u)
+					{
+						pos[p][k_left]=1;
+						dig[p][k_left]=d;
+						used[p][k_left]=u;
+						break;
+					}
+				}
+				else if(k_left-u>=0 && pos[p+1][k_left-u]==1)
+				{
+					pos[p][k_left]=1;
+					dig[p][k_left]=d;
+					used[p][k_left]=u;
+					break;
+				}
+			}
+		}
+	}
+
+
+
 
 	
-	if(	fun(0,k)==1)
+	if(	pos[0][k]==1)
 	{
-		rep(i,0,n) cout<<ans[i];
+		rep(i,0,n)
+		{
+			ll d = dig[i][k];
+			k-=used[i][k];
+			cout<<d;
+		} 
 		cout<<"\n";
 	} 
 	else cout<<-1<<"\n";
