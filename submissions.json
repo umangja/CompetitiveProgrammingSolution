@@ -1,4 +1,20 @@
 {
+  "AC12332594": {
+    "contest_id": "abc164",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/abc164/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "Sheep and Wolves",
+    "problem_url": "https://atcoder.jp/contests/abc164/tasks/abc164_a",
+    "submission_id": "AC12332594",
+    "submission_url": "https://atcoder.jp/contests/abc164/submissions/12332594",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Apr/26/2020 17:30"
+  },
   "AC12344161": {
     "contest_id": "abc164",
     "language": "C++ (GCC 9.2.1)",
