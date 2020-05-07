@@ -7668,6 +7668,24 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF79231955": {
+    "contest_id": 1345,
+    "language": "GNU C++14",
+    "path": "codeforces/1345/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Monopole Magnets",
+    "problem_url": "https://codeforces.com/contest/1345/problem/D",
+    "submission_id": "CF79231955",
+    "submission_url": "https://codeforces.com/contest/1345/submission/79231955",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "dsu",
+      "*2000"
+    ],
+    "timestamp": "May/07/2020 10:47"
+  },
   "CF79233308": {
     "contest_id": 1345,
     "language": "GNU C++14",
