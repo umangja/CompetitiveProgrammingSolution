@@ -7668,6 +7668,23 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF80090006": {
+    "contest_id": 1353,
+    "language": "GNU C++14",
+    "path": "codeforces/1353/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Two Arrays And Swaps",
+    "problem_url": "https://codeforces.com/contest/1353/problem/B",
+    "submission_id": "CF80090006",
+    "submission_url": "https://codeforces.com/contest/1353/submission/80090006",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*800"
+    ],
+    "timestamp": "May/14/2020 20:16"
+  },
   "CF80114824": {
     "contest_id": 1353,
     "language": "GNU C++14",
