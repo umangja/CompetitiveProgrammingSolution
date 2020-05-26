@@ -7668,6 +7668,23 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF81475391": {
+    "contest_id": 400,
+    "language": "GNU C++14",
+    "path": "codeforces/400/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Inna and Huge Candy Matrix",
+    "problem_url": "https://codeforces.com/contest/400/problem/C",
+    "submission_id": "CF81475391",
+    "submission_url": "https://codeforces.com/contest/400/submission/81475391",
+    "tags": [
+      "implementation",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "May/26/2020 19:04"
+  },
   "CF81496390": {
     "contest_id": 1358,
     "language": "GNU C++14",
