@@ -7668,6 +7668,24 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF81632497": {
+    "contest_id": 1023,
+    "language": "GNU C++14",
+    "path": "codeforces/1023/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Down or Right",
+    "problem_url": "https://codeforces.com/contest/1023/problem/E",
+    "submission_id": "CF81632497",
+    "submission_url": "https://codeforces.com/contest/1023/submission/81632497",
+    "tags": [
+      "constructive algorithms",
+      "interactive",
+      "matrices",
+      "*2100"
+    ],
+    "timestamp": "May/27/2020 20:43"
+  },
   "CF81677293": {
     "contest_id": 1070,
     "language": "GNU C++14",
