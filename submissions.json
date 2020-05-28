@@ -7668,6 +7668,23 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF81711964": {
+    "contest_id": 1032,
+    "language": "GNU C++14",
+    "path": "codeforces/1032/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Barcelonian Distance",
+    "problem_url": "https://codeforces.com/contest/1032/problem/D",
+    "submission_id": "CF81711964",
+    "submission_url": "https://codeforces.com/contest/1032/submission/81711964",
+    "tags": [
+      "geometry",
+      "implementation",
+      "*1900"
+    ],
+    "timestamp": "May/28/2020 19:28"
+  },
   "CF81715803": {
     "contest_id": 1359,
     "language": "GNU C++14",
