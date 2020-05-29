@@ -7668,6 +7668,25 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF81876513": {
+    "contest_id": 1029,
+    "language": "GNU C++14",
+    "path": "codeforces/1029/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Multicolored Markers",
+    "problem_url": "https://codeforces.com/contest/1029/problem/F",
+    "submission_id": "CF81876513",
+    "submission_url": "https://codeforces.com/contest/1029/submission/81876513",
+    "tags": [
+      "binary search",
+      "brute force",
+      "math",
+      "number theory",
+      "*2000"
+    ],
+    "timestamp": "May/29/2020 16:30"
+  },
   "CF81882283": {
     "contest_id": 1029,
     "language": "GNU C++14",
