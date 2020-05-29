@@ -7668,6 +7668,24 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF81894692": {
+    "contest_id": 1028,
+    "language": "GNU C++17",
+    "path": "codeforces/1028/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Order book",
+    "problem_url": "https://codeforces.com/contest/1028/problem/D",
+    "submission_id": "CF81894692",
+    "submission_url": "https://codeforces.com/contest/1028/submission/81894692",
+    "tags": [
+      "combinatorics",
+      "data structures",
+      "greedy",
+      "*2100"
+    ],
+    "timestamp": "May/29/2020 20:02"
+  },
   "CF81895138": {
     "contest_id": 1028,
     "language": "GNU C++17",
