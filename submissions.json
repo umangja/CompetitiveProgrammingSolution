@@ -7668,6 +7668,25 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF82040411": {
+    "contest_id": 1010,
+    "language": "GNU C++17",
+    "path": "codeforces/1010/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Mars rover",
+    "problem_url": "https://codeforces.com/contest/1010/problem/D",
+    "submission_id": "CF82040411",
+    "submission_url": "https://codeforces.com/contest/1010/submission/82040411",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "implementation",
+      "trees",
+      "*2000"
+    ],
+    "timestamp": "May/31/2020 18:20"
+  },
   "CF82045364": {
     "contest_id": 1006,
     "language": "GNU C++17",
