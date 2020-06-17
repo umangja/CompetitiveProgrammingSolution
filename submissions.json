@@ -7668,6 +7668,27 @@
     ],
     "timestamp": "Feb/14/2020 14:49"
   },
+  "CF84074613": {
+    "contest_id": 1364,
+    "language": "GNU C++17",
+    "path": "codeforces/1364/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Ehab's Last Corollary",
+    "problem_url": "https://codeforces.com/contest/1364/problem/D",
+    "submission_id": "CF84074613",
+    "submission_url": "https://codeforces.com/contest/1364/submission/84074613",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "graphs",
+      "greedy",
+      "implementation",
+      "trees",
+      "*2100"
+    ],
+    "timestamp": "Jun/17/2020 18:35"
+  },
   "CF84173634": {
     "contest_id": 1368,
     "language": "GNU C++17",
