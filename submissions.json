@@ -1,4 +1,20 @@
 {
+  "AC14502626": {
+    "contest_id": "agc046",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/agc046/B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Extension",
+    "problem_url": "https://atcoder.jp/contests/agc046/tasks/agc046_b",
+    "submission_id": "AC14502626",
+    "submission_url": "https://atcoder.jp/contests/agc046/submissions/14502626",
+    "tags": [
+      "AtCoder",
+      "*600"
+    ],
+    "timestamp": "Jun/20/2020 19:07"
+  },
   "AC14720176": {
     "contest_id": "abc172",
     "language": "C++ (GCC 9.2.1)",
