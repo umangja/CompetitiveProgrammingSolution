@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF84396936": {
+    "contest_id": 748,
+    "language": "GNU C++17",
+    "path": "codeforces/748/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Santa Claus and a Palindrome",
+    "problem_url": "https://codeforces.com/contest/748/problem/D",
+    "submission_id": "CF84396936",
+    "submission_url": "https://codeforces.com/contest/748/submission/84396936",
+    "tags": [
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "*2100"
+    ],
+    "timestamp": "Jun/20/2020 14:20"
+  },
   "CF84403597": {
     "contest_id": 746,
     "language": "GNU C++17",
