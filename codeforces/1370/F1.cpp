@@ -67,7 +67,7 @@ pii query(vi nodes)
 		return mp(-1,inf);
 	}
 
-	assert(cnt+1<=12);
+	assert(cnt+1<=14);
 	cout<<"? "<<sz(nodes)<<" ";
 	rep(i,0,sz(nodes)) cout<<nodes[i]+1<<" ";
 	cout<<"\n"<<flush;
