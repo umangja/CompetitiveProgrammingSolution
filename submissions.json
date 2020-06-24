@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF84902366": {
+    "contest_id": 665,
+    "language": "GNU C++17",
+    "path": "codeforces/665/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Simple Subset",
+    "problem_url": "https://codeforces.com/contest/665/problem/D",
+    "submission_id": "CF84902366",
+    "submission_url": "https://codeforces.com/contest/665/submission/84902366",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "number theory",
+      "*1800"
+    ],
+    "timestamp": "Jun/24/2020 20:45"
+  },
   "CF84906911": {
     "contest_id": 663,
     "language": "GNU C++17",
