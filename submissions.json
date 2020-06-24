@@ -2094,6 +2094,25 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF84906911": {
+    "contest_id": 663,
+    "language": "GNU C++17",
+    "path": "codeforces/663/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Rebus",
+    "problem_url": "https://codeforces.com/contest/663/problem/A",
+    "submission_id": "CF84906911",
+    "submission_url": "https://codeforces.com/contest/663/submission/84906911",
+    "tags": [
+      "constructive algorithms",
+      "expression parsing",
+      "greedy",
+      "math",
+      "*1800"
+    ],
+    "timestamp": "Jun/24/2020 21:33"
+  },
   "CF84913021": {
     "contest_id": 622,
     "language": "GNU C++17",
