@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF84985799": {
+    "contest_id": 1373,
+    "language": "GNU C++14",
+    "path": "codeforces/1373/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Donut Shops",
+    "problem_url": "https://codeforces.com/contest/1373/problem/A",
+    "submission_id": "CF84985799",
+    "submission_url": "https://codeforces.com/contest/1373/submission/84985799",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Jun/25/2020 20:12"
+  },
   "CF84990405": {
     "contest_id": 1373,
     "language": "GNU C++14",
