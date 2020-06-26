@@ -2094,6 +2094,27 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF85089499": {
+    "contest_id": 553,
+    "language": "GNU C++14",
+    "path": "codeforces/553/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Kyoya and Permutation",
+    "problem_url": "https://codeforces.com/contest/553/problem/B",
+    "submission_id": "CF85089499",
+    "submission_url": "https://codeforces.com/contest/553/submission/85089499",
+    "tags": [
+      "binary search",
+      "combinatorics",
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "math",
+      "*1900"
+    ],
+    "timestamp": "Jun/26/2020 10:11"
+  },
   "CF85090971": {
     "contest_id": 551,
     "language": "GNU C++14",
