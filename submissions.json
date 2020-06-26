@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF85147427": {
+    "contest_id": 488,
+    "language": "GNU C++14",
+    "path": "codeforces/488/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Candy Boxes",
+    "problem_url": "https://codeforces.com/contest/488/problem/B",
+    "submission_id": "CF85147427",
+    "submission_url": "https://codeforces.com/contest/488/submission/85147427",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "math",
+      "*1900"
+    ],
+    "timestamp": "Jun/26/2020 22:11"
+  },
   "CF85197581": {
     "contest_id": 482,
     "language": "GNU C++14",
