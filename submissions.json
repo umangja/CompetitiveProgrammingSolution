@@ -2094,6 +2094,25 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF85509365": {
+    "contest_id": 452,
+    "language": "GNU C++14",
+    "path": "codeforces/452/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "4-point polyline",
+    "problem_url": "https://codeforces.com/contest/452/problem/B",
+    "submission_id": "CF85509365",
+    "submission_url": "https://codeforces.com/contest/452/submission/85509365",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "geometry",
+      "trees",
+      "*1800"
+    ],
+    "timestamp": "Jun/30/2020 11:11"
+  },
   "CF85515184": {
     "contest_id": 441,
     "language": "GNU C++14",
