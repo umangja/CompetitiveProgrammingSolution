@@ -2094,6 +2094,27 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF85515184": {
+    "contest_id": 441,
+    "language": "GNU C++14",
+    "path": "codeforces/441/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Valera and Swaps",
+    "problem_url": "https://codeforces.com/contest/441/problem/D",
+    "submission_id": "CF85515184",
+    "submission_url": "https://codeforces.com/contest/441/submission/85515184",
+    "tags": [
+      "constructive algorithms",
+      "dsu",
+      "graphs",
+      "implementation",
+      "math",
+      "string suffix structures",
+      "*2100"
+    ],
+    "timestamp": "Jun/30/2020 12:36"
+  },
   "CF85523833": {
     "contest_id": 388,
     "language": "GNU C++14",
