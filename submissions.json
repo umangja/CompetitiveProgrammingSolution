@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF85593252": {
+    "contest_id": 327,
+    "language": "GNU C++14",
+    "path": "codeforces/327/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Block Tower",
+    "problem_url": "https://codeforces.com/contest/327/problem/D",
+    "submission_id": "CF85593252",
+    "submission_url": "https://codeforces.com/contest/327/submission/85593252",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "graphs",
+      "*1900"
+    ],
+    "timestamp": "Jul/01/2020 11:20"
+  },
   "CF85627283": {
     "contest_id": 1371,
     "language": "GNU C++14",
