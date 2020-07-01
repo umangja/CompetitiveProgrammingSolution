@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF85664008": {
+    "contest_id": 1371,
+    "language": "GNU C++14",
+    "path": "codeforces/1371/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Grid-00100",
+    "problem_url": "https://codeforces.com/contest/1371/problem/D",
+    "submission_id": "CF85664008",
+    "submission_url": "https://codeforces.com/contest/1371/submission/85664008",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Jul/01/2020 20:02"
+  },
   "CF85687822": {
     "contest_id": 1371,
     "language": "GNU C++14",
