@@ -43,85 +43,50 @@ template<class T> using oset=tree<T, null_type, less<T>, rb_tree_tag, tree_order
 #define debug_v(x)   {cout << #x << " "; for (auto ioi : x) cout << ioi << " "; cout << endl;}
 #define debug_vp(x)  {cout << #x << " "; for (auto ioi : x) cout << '[' << ioi.F << " " << ioi.S << ']'; cout << endl;}
 #define debug_v_v(x) {cout << #x << "/*\n"; for (auto ioi : x) { for (auto ioi2 : ioi) cout << ioi2 << " "; cout << '\n';} cout << "*/" << #x << endl;}
-const ll N = 1005;
-vi ans;
-
-ll fun(vi &a)
-{
-	set<ll> st;
-	rep(i,0,sz(a)) st.insert(a[i]);
-	ll mex = 0;
-	while(1)
-	{
-		if(st.find(mex)!=st.end()) mex++;
-		else return mex;
-	}
-
-	return mex;
-}
-
-void fun2()
-{
-	cout<<sz(ans)<<"\n";
-	rep(i,0,sz(ans)) cout<<ans[i]+1<<" ";
-	cout<<"\n";
-	return ;
-}
 
 int solve()
 {
-	ll n;cin>>n;	
-	ans.clear();
-	vi a(n);
+	ll n;cin>>n;
+	vi a(n),ans;
 	rep(i,0,n) cin>>a[i];
 
-	map<ll,ll> cnt;
-	rep(i,0,n) cnt[a[i]]++;
+	ll cur =n;
 
-	rep(i,0,n)
+	while(!is_sorted(a.begin(), a.end()))
 	{
-		if(cnt[a[i]]>1 || a[i]==n)
-		{
-			ll mex = fun(a);
+		set<ll> g;
+		rep(i,0,n) g.insert(a[i]);
 
-			cnt[mex]++;
-			cnt[a[i]]--;
-			a[i]=mex;
-			ans.pb(i);
+		ll mex = 0;
+		all(it,g) if(*it==mex) mex++; else break;
+
+		if(mex==0)
+		{
+			ll idx=1;
+			rep(i,0,n) if(a[i]!=i+1) { idx=i; break;}
+			ans.pb(idx);
+			a[idx]=0;
+		} 
+		else
+		{
+			ll idx = mex;
+			ans.pb(idx-1);
+			a[idx-1]=mex;
+
 		}
+
 	}
 
 	// debug_v(a);
-	assert(fun(a)==n);
-
-	vi vis(n,0);
-	rep(i,0,n)
-	{
-		if(a[i]!=i && vis[i]==0)
-		{
-			ll cur = i;
-			ll st  = i;
-			while(vis[cur]==0)
-			{
-				ans.pb(cur);
-
-				ll mex = fun(a);
-				vis[cur]=1;
-				ll tmp = a[cur];
-				a[cur]=mex;
-				cur=tmp;
-			}
-
-			ans.pb(st);
-			ll mex = fun(a);
-			a[st]=mex;
-
-		}
-	}
 
 	assert(is_sorted(a.begin(), a.end()));
-	assert(sz(a)<=2*n);
-	fun2();
+	assert(sz(ans)<=2*n);
+
+	cout<<sz(ans)<<"\n";
+	rep(i,0,sz(ans)) cout<<ans[i]+1<<" ";
+	cout<<"\n";
+
+
 	return 0;
 }
 
