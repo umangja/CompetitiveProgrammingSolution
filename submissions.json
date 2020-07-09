@@ -2094,6 +2094,22 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF86375798": {
+    "contest_id": 238,
+    "language": "GNU C++17",
+    "path": "codeforces/238/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Boring Partition",
+    "problem_url": "https://codeforces.com/contest/238/problem/B",
+    "submission_id": "CF86375798",
+    "submission_url": "https://codeforces.com/contest/238/submission/86375798",
+    "tags": [
+      "constructive algorithms",
+      "*1800"
+    ],
+    "timestamp": "Jul/09/2020 23:58"
+  },
   "CF86379876": {
     "contest_id": 234,
     "language": "GNU C++17",
