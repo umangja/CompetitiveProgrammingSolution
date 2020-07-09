@@ -43,7 +43,6 @@ template<class T> using oset=tree<T, null_type, less<T>, rb_tree_tag, tree_order
 #define debug_v(x)   {cout << #x << " "; for (auto ioi : x) cout << ioi << " "; cout << endl;}
 #define debug_vp(x)  {cout << #x << " "; for (auto ioi : x) cout << '[' << ioi.F << " " << ioi.S << ']'; cout << endl;}
 #define debug_v_v(x) {cout << #x << "/*\n"; for (auto ioi : x) { for (auto ioi2 : ioi) cout << ioi2 << " "; cout << '\n';} cout << "*/" << #x << endl;}
-
 const ll N = 1e5+5;
 ll n;
 vvi g(N,vi ());
@@ -61,17 +60,17 @@ ll dfs1(ll u,ll p)
 	return siz[u];
 }
 
-void dfs2(ll u,ll p=0,ll last=0,ll cur=0)
+void dfs2(ll u,ll p=0,ll last=0)
 {
-	rep(i,0,sz(g[u])) if(g[u][i]!=p && vis[g[u][i]]==0 && 2*siz[g[u][i]]>siz[cur]) return dfs2(g[u][i],u,last,cur);
-
+	rep(i,0,sz(g[u])) if(g[u][i]!=p && vis[g[u][i]]==0 && 2*siz[g[u][i]]>siz[last]) return dfs2(g[u][i],u,last);
+	
 	if(vis[last]==0) col[u]=0;
 	else col[u]=col[last]+1;
 
 	vis[u]=1;
 
-	// cout<<"centroid is "<<u+1<<"\n";
-	rep(i,0,sz(g[u])) if(vis[g[u][i]]==0) dfs1(g[u][i],u),dfs2(g[u][i],u,u,g[u][i]);
+	rep(i,0,sz(g[u])) if(vis[g[u][i]]==0) dfs1(g[u][i],u),dfs2(g[u][i],u,u);
+
 	return ;
 }
 
@@ -87,8 +86,8 @@ int solve()
 	}
 
 	dfs1(0,-1);
-	dfs2(0,0,0,0);
-	// rep(i,0,n) cout<<col[i]<<"\n";
+	dfs2(0,0,0);
+
 	rep(i,0,n) cout<<(char)(col[i]+'A')<<"\n";
 
 	return 0;
