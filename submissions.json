@@ -2094,6 +2094,23 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF86379876": {
+    "contest_id": 234,
+    "language": "GNU C++17",
+    "path": "codeforces/234/H.cpp",
+    "platform": "Codeforces",
+    "problem_index": "H",
+    "problem_name": "Merging Two Decks",
+    "problem_url": "https://codeforces.com/contest/234/problem/H",
+    "submission_id": "CF86379876",
+    "submission_url": "https://codeforces.com/contest/234/submission/86379876",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "Jul/10/2020 01:16"
+  },
   "CF86381769": {
     "contest_id": 226,
     "language": "GNU C++17",
