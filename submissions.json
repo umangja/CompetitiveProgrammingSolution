@@ -1,4 +1,20 @@
 {
+  "AC15199862": {
+    "contest_id": "aising2020",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/aising2020/E.cpp",
+    "platform": "AtCoder",
+    "problem_index": "E",
+    "problem_name": "Camel Train",
+    "problem_url": "https://atcoder.jp/contests/aising2020/tasks/aising2020_e",
+    "submission_id": "AC15199862",
+    "submission_url": "https://atcoder.jp/contests/aising2020/submissions/15199862",
+    "tags": [
+      "AtCoder",
+      "*500"
+    ],
+    "timestamp": "Jul/12/2020 12:37"
+  },
   "AC15338678": {
     "contest_id": "dp",
     "language": "C++ (GCC 9.2.1)",
