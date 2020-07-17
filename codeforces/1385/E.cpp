@@ -89,13 +89,13 @@ int solve()
 	vi temp;
 	rep(i,0,n)
 	{
-		if(vis[i]==0)
+		if(vis[i]==0 && deg[i]==0)
 		{
 			st.clear();
 			dfs(i,temp);
 		} 
 	}
-
+	
 	reverse(temp.begin(), temp.end());
 	rep(j,0,sz(temp)) topo.pb(temp[j]);
 
