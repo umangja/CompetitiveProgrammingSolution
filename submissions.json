@@ -2094,6 +2094,24 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF87291024": {
+    "contest_id": 1379,
+    "language": "GNU C++14",
+    "path": "codeforces/1379/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Acacius and String",
+    "problem_url": "https://codeforces.com/contest/1379/problem/A",
+    "submission_id": "CF87291024",
+    "submission_url": "https://codeforces.com/contest/1379/submission/87291024",
+    "tags": [
+      "brute force",
+      "implementation",
+      "strings",
+      "*1500"
+    ],
+    "timestamp": "Jul/19/2020 14:43"
+  },
   "CF87302193": {
     "contest_id": 1379,
     "language": "GNU C++14",
