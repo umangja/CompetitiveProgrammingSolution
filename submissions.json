@@ -1,4 +1,20 @@
 {
+  "AC15349561": {
+    "contest_id": "dp",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/dp/U.cpp",
+    "platform": "AtCoder",
+    "problem_index": "U",
+    "problem_name": "Grouping",
+    "problem_url": "https://atcoder.jp/contests/dp/tasks/dp_u",
+    "submission_id": "AC15349561",
+    "submission_url": "https://atcoder.jp/contests/dp/submissions/15349561",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Jul/21/2020 18:35"
+  },
   "AC15358761": {
     "contest_id": "dp",
     "language": "C++ (GCC 9.2.1)",
