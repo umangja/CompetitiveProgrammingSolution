@@ -91,14 +91,17 @@ int solve()
 			if(d[j+1]+fun(st+1)<=l) st++;
 			else
 			{
-				if((j>cur && st<=k) ) 
+				// high tide
+				if( (j==cur && st<k ) || (j>cur && st<=k) ) 
 				{
 					cout<<"NO\n";
 					return 0;
 				}
-				else 
+				else //low tide
 				{
+					// wait
 					ll val = l - d[j+1];
+					// whatis(val);
 					st = k+(k-val);
 				}
 
