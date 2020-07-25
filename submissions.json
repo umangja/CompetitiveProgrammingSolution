@@ -1,4 +1,20 @@
 {
+  "AC15438666": {
+    "contest_id": "m-solutions2020",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/m-solutions2020/D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "Road to Millionaire",
+    "problem_url": "https://atcoder.jp/contests/m-solutions2020/tasks/m_solutions2020_d",
+    "submission_id": "AC15438666",
+    "submission_url": "https://atcoder.jp/contests/m-solutions2020/submissions/15438666",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "Jul/25/2020 18:17"
+  },
   "AC15459652": {
     "contest_id": "m-solutions2020",
     "language": "C++ (GCC 9.2.1)",
