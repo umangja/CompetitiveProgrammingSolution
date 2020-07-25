@@ -1,4 +1,20 @@
 {
+  "AC15459652": {
+    "contest_id": "m-solutions2020",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/m-solutions2020/F.cpp",
+    "platform": "AtCoder",
+    "problem_index": "F",
+    "problem_name": "Air Safety",
+    "problem_url": "https://atcoder.jp/contests/m-solutions2020/tasks/m_solutions2020_f",
+    "submission_id": "AC15459652",
+    "submission_url": "https://atcoder.jp/contests/m-solutions2020/submissions/15459652",
+    "tags": [
+      "AtCoder",
+      "*600"
+    ],
+    "timestamp": "Jul/26/2020 01:20"
+  },
   "AC15775312": {
     "contest_id": "abc174",
     "language": "C++ (GCC 9.2.1)",
