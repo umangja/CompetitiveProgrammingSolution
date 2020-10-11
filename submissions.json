@@ -2094,6 +2094,25 @@
     ],
     "timestamp": "Feb/19/2021 19:40"
   },
+  "CF95283144": {
+    "contest_id": 1430,
+    "language": "GNU C++17",
+    "path": "codeforces/1430/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "String Deletion",
+    "problem_url": "https://codeforces.com/contest/1430/problem/D",
+    "submission_id": "CF95283144",
+    "submission_url": "https://codeforces.com/contest/1430/submission/95283144",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "two pointers",
+      "*1700"
+    ],
+    "timestamp": "Oct/11/2020 21:50"
+  },
   "CF95325493": {
     "contest_id": 1430,
     "language": "GNU C++17",
