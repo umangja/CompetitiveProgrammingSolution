@@ -1,4 +1,22 @@
 {
+  "CF100995287": {
+    "contest_id": 1398,
+    "language": "GNU C++14",
+    "path": "codeforces/1398/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Good Subarrays",
+    "problem_url": "https://codeforces.com/contest/1398/problem/C",
+    "submission_id": "CF100995287",
+    "submission_url": "https://codeforces.com/contest/1398/submission/100995287",
+    "tags": [
+      "data structures",
+      "dp",
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Dec/12/2020 12:50"
+  },
   "CF100999417": {
     "contest_id": 1398,
     "language": "GNU C++14",
