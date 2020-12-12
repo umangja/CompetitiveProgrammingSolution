@@ -1,4 +1,22 @@
 {
+  "CF100999417": {
+    "contest_id": 1398,
+    "language": "GNU C++14",
+    "path": "codeforces/1398/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Colored Rectangles",
+    "problem_url": "https://codeforces.com/contest/1398/problem/D",
+    "submission_id": "CF100999417",
+    "submission_url": "https://codeforces.com/contest/1398/submission/100999417",
+    "tags": [
+      "dp",
+      "greedy",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Dec/12/2020 13:48"
+  },
   "CF101219676": {
     "contest_id": 1450,
     "language": "GNU C++14",
