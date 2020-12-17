@@ -1,4 +1,24 @@
 {
+  "CF101479044": {
+    "contest_id": 1453,
+    "language": "GNU C++14",
+    "path": "codeforces/1453/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Checkpoints",
+    "problem_url": "https://codeforces.com/contest/1453/problem/D",
+    "submission_id": "CF101479044",
+    "submission_url": "https://codeforces.com/contest/1453/submission/101479044",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "probabilities",
+      "*1900"
+    ],
+    "timestamp": "Dec/17/2020 12:34"
+  },
   "CF101516308": {
     "contest_id": 1463,
     "language": "GNU C++14",
