@@ -1,4 +1,21 @@
 {
+  "CF101474657": {
+    "contest_id": 1453,
+    "language": "GNU C++14",
+    "path": "codeforces/1453/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Triangles",
+    "problem_url": "https://codeforces.com/contest/1453/problem/C",
+    "submission_id": "CF101474657",
+    "submission_url": "https://codeforces.com/contest/1453/submission/101474657",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1700"
+    ],
+    "timestamp": "Dec/17/2020 11:22"
+  },
   "CF101479044": {
     "contest_id": 1453,
     "language": "GNU C++14",
