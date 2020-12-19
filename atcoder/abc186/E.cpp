@@ -56,8 +56,8 @@ int main()
 	while(T--)
 	{
 		long long int N,S,K;cin>>N>>S>>K;
+		// (S+x*K)%N==0
 		long long int SDup = S;
-
 		S = (-1*S)%N;
 		S+=N;
 		S%=N;
@@ -67,6 +67,9 @@ int main()
 		long long int ans = modInverse(K/g,N/g);
 		ans = (ans*S)%N;
 		ans/=g;
+
+		// cout<<ans<<"\n";
+
 		if((SDup+(ans*K)%N)%N!=0) cout<<-1<<"\n";
 		else cout<<ans<<"\n";
 
