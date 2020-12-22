@@ -1,6 +1,5 @@
 /*input
-3 3
-abc
+2 -1
 ba
 4 7
 daaa
@@ -27,35 +26,31 @@ int main()
 
 	T = T - power2[a[0]] + power2[a[1]]; 
 
-	
 	vector<ll> b;
 	for(ll i=2;i<n;i++) b.push_back(a[i]);
 	sort(b.begin(), b.end());
 	n-=2;
 
-	map<int,int> cnt;
-	for(ll i=0;i<n;i++) T+=(1ll<<b[i]),cnt[b[i]+1]++;
-	// cout<<T<<"\n";
 
-	int pos=(T>=0);
-	ll i = 0;
-	while(T>0 && pos==1)
+	// b 
+	ll pos=0;
+
+	vector<ll> suf(n,0);
+	for(ll i=n-1;i>=0;i--) suf[i] = (i+1<n?suf[i+1]:0)+(1ll<<b[i]);
+
+	vector<ll> cnt(26,0);
+	for(ll i=0;i<n;i++) cnt[b[i]]++;
+
+	ll cur = 0;
+	for(int i=0;i<n;i++)
 	{
-		if(((T>>i)&1)==1)
-		{
-			if(cnt[i]==0)
-			{
-				pos=0;
-				break;
-			} 
-			else cnt[i]--,T^=(1ll<<i);
-		}
+		cur+=(1ll<<b[i]);
+		if(i+1<n && T+cur==suf[i+1]) pos=1;
+		else if(i+1==n && T+cur==0) pos=1;
+	} 
 
-		cnt[i+1]+=cnt[i]/2;
-		i++;
-	}
-
-	cout<<(pos==1?"Yes\n":"No\n");
-
+	if(n>0 && suf[0]==T) pos=1;
+	if(n==0 && T==0) pos=1;
+	cout<<(pos==1 ?"Yes\n":"No\n");
 	return 0;
 }
