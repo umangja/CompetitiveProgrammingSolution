@@ -5,35 +5,27 @@
 */
 #include<bits/stdc++.h>
 using namespace std;
-
-const int K = 20,N = 10005;
-
-int dp[N][K];
-
-int query(int L,int R)
-{
-	int k = log2(R-L+1);
-	return min(dp[L][k],dp[R-(1<<k)+1][k]);
-}
-
 int main()
 {
-	int n;cin>>n;
-	int a[n];
-	for(int i=0;i<n;i++) cin>>a[i];
-
-	for(int i=0;i<n;i++) dp[i][0] = a[i];
-	for(int k=1;k<K;k++)
+	int T = 1; // cin>>T;
+	while(T--)
 	{
-		for(int i=0; (i+(1<<k))<=n; i++)
-		{
-			dp[i][k] = min(dp[i][k-1],dp[i+(1<<(k-1))][k-1]);
-			// cout<<i<<" "<<k<<" "<<dp[i][k]<<"\n";
-		} 
-	} 
+		int N;cin>>N;
+		vector<int> A(N);
+		for(int i=0;i<N;i++) cin>>A[i];
 
-	long long int ans = 0;
-	for(int i=0;i<n;i++) for(int j=i;j<n;j++) ans=max(ans,(long long int)query(i,j)*(long long int)(j-i+1));
-	cout<<ans<<"\n";
+		int ans = A[0];
+		for(int i=0;i<N;i++){
+			int cur = A[i];
+			ans=max(ans,cur);
+			for(int j=i+1;j<N;j++)
+			{
+				cur=min(cur,A[j]);
+				ans=max(ans,cur*(j-i+1));
+			} 
+		} 
+		cout<<ans<<"\n";
+
+	}
 	return 0;
 }
