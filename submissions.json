@@ -1,4 +1,20 @@
 {
+  "AC19727035": {
+    "contest_id": "keyence2021",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/keyence2021/B.cpp",
+    "platform": "AtCoder",
+    "problem_index": "B",
+    "problem_name": "Mex Boxes",
+    "problem_url": "https://atcoder.jp/contests/keyence2021/tasks/keyence2021_b",
+    "submission_id": "AC19727035",
+    "submission_url": "https://atcoder.jp/contests/keyence2021/submissions/19727035",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "Jan/27/2021 20:55"
+  },
   "AC19728548": {
     "contest_id": "keyence2021",
     "language": "C++ (GCC 9.2.1)",
