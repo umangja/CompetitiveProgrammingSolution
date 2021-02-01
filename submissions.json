@@ -1,4 +1,22 @@
 {
+  "CF106221010": {
+    "contest_id": 1467,
+    "language": "GNU C++14",
+    "path": "codeforces/1467/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Sum of Paths",
+    "problem_url": "https://codeforces.com/contest/1467/problem/D",
+    "submission_id": "CF106221010",
+    "submission_url": "https://codeforces.com/contest/1467/submission/106221010",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "math",
+      "*2200"
+    ],
+    "timestamp": "Feb/01/2021 23:54"
+  },
   "CF106394381": {
     "contest_id": 1473,
     "language": "GNU C++14",
