@@ -1,0 +1,183 @@
+/*input
+1
+3 6
+*aa
+b*a
+bb*
+
+3 1
+*ba
+b*b
+ab*
+3 3
+*ba
+b*b
+ab*
+3 4
+*ba
+b*b
+ab*
+4 6
+*aaa
+b*ba
+ab*a
+bba*
+2 6
+*a
+b*
+
+*/
+
+
+// assic value of ('0'-'9') is(48 - 57) and (a-z) is (97-122) and (A-Z) is(65-90) and 32 for space
+// #pragma GCC target ("avx2")
+// #pragma GCC optimization ("O3")
+// #pragma GCC optimization ("unroll-loops")
+#include<bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace std;
+
+// order_of_key (k) : Number of items strictly smaller than k .
+// find_by_order(k) : K-th element in a set (counting from zero).
+using namespace __gnu_pbds;
+template<class T> using oset=tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
+#define ll          long long int
+#define pb          push_back
+#define pii         pair<ll ,ll >
+#define vpii        vector< pii >
+#define vi          vector<ll >
+#define vs			vector< string >
+#define vvi         vector< vector< ll > >
+#define inf			(ll)1e18
+#define all(it,a)   for(auto it=(a).begin();it!=(a).end();it++) 
+#define F           first
+#define S           second
+#define sz(x)       (ll )x.size()
+#define rep(i,a,b)	for(ll  i=a;i<b;i++)
+#define repr(i,a,b) for(ll  i=a;i>b;i--)
+#define lbnd        lower_bound
+#define ubnd        upper_bound
+#define mp          make_pair
+#define whatis(x)   cout << #x << " is " << x << "\n";
+#define graph(n)    adj(n,vector< ll > () )
+//mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+#define debug(x)     cout << #x << " " << x << endl;
+#define debug_p(x)   cout << #x << " " << x.F << " " << x.S << endl;
+#define debug_v(x)   {cout << #x << " "; for (auto ioi : x) cout << ioi << " "; cout << endl;}
+#define debug_vp(x)  {cout << #x << " "; for (auto ioi : x) cout << '[' << ioi.F << " " << ioi.S << ']'; cout << endl;}
+#define debug_v_v(x) {cout << #x << "/*\n"; for (auto ioi : x) { for (auto ioi2 : ioi) cout << ioi2 << " "; cout << '\n';} cout << "*/" << #x << endl;}
+
+ll n,m;
+vs mat;
+vi ans;
+
+void fun(char c){
+
+	vi go(n,-1);
+	rep(i,0,n){
+		rep(j,0,n) if(mat[i][j]==c) { go[i] = j; break;}
+	}
+	ll cur = 0;
+	ans.push_back(cur);
+	while(sz(ans)<m+1){
+		cur = go[cur];
+		ans.push_back(cur);
+	}
+	return ;
+}
+
+int solve()
+{
+	ll pos=1;	
+	cin>>n>>m;
+	mat.clear(); mat.resize(n);
+	ans.clear();
+	rep(i,0,n) cin>>mat[i];
+
+	if(m%2==1){
+		pos=1;
+		ll cur=0;
+		for(int i=0;i<m+1;i++) ans.push_back(cur),cur^=1;
+	}
+	else{
+		ll okit = 0;
+		for(int i=0;i<n && okit==0;i++) for(int j=0;j<n && okit==0;j++) if(i!=j && mat[i][j]==mat[j][i]) {
+			pos=1;
+			okit=1;
+			for(int k=0;k<m+1;k++){
+				ans.push_back( (k%2==0?i:j) );
+			}
+		}
+
+		ll atleast1a = 1,atleast1b = 1;
+		ll alla=-1,allb=-1,allc=-1;
+		for(int i=0;i<n;i++){
+			ll cnta=0,cntb=0;
+			for(int j=0;j<n;j++) if(i!=j) {
+				if(mat[i][j]=='a') cnta++;
+				else if(mat[i][j]=='b') cntb++;
+			} 
+
+			if(cnta==n-1) atleast1b=0,alla = i;
+			if(cntb==n-1) atleast1a=0,allb = i;
+		} 
+
+		if(atleast1a==1) fun('a');
+		else if(atleast1b==1) fun('b');
+		else if(n==2) pos=0;
+		else{
+
+			if(alla!=0 && allb !=0) allc = 0;
+			else if(alla!=1 && allb !=1) allc = 1;
+			else allc = 2;
+
+			vi temp = {allc, allb, allc, alla};
+			if(m%4==2) reverse(temp.begin(), temp.end());
+			ll cur=0;
+			ll dup = m+1;
+			while(dup--) ans.push_back(temp[cur]), cur = (cur+1)%4;
+		}
+	}
+
+	if(m==1){
+		pos=1;
+		ans.push_back(0);
+		ans.push_back(1);
+	}
+
+	if(pos==1){
+		cout<<"YES\n";
+		string temp = "";
+		rep(i,1,m+1) temp+=mat[ans[i-1]][ans[i]];
+		assert(sz(temp)==m);
+		rep(i,0,m) assert(temp[i] == temp[m-1-i]);
+		rep(i,0,m+1) cout<<ans[i]+1<<" "; cout<<"\n";
+	}
+	else cout<<"NO\n";
+
+	return 0;
+}
+
+int main()
+{
+	auto start = chrono::high_resolution_clock::now();
+
+    // freopen("input.txt","r",stdin);
+    // freopen("output.txt","w",stdout);
+	
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
+	ll test_cases=1;
+	cin>>test_cases;
+	while(test_cases--)
+		solve();
+
+	auto stop = chrono::high_resolution_clock::now();
+	auto duration = chrono::duration_cast<chrono::milliseconds>(stop-start);
+	//cout<<"\nduration: "<<(double)duration.count()<<" milliseconds";
+}
