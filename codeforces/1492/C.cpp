@@ -69,6 +69,7 @@ int solve()
 		}
 	}
 
+	// debug_v_v(R);
 
 	vi R2(m,0);
 
@@ -77,7 +78,12 @@ int solve()
 		ll c1 = t[i]-'a';
 		ll R1 = sz(pos[c1]) - R[c1][i];
 		ll temp = lower_bound(pos[c1].begin(), pos[c1].end(),tt) - pos[c1].begin()-1;
+		if(!(temp>=0 && temp<sz(pos[c1]))){
+			cout<<"Error\n";
+			break;
+		}
 		R2[i] = pos[c1][min(temp,R1)];
+// 		cout<<i+1<<" "<<R2[i]+1<<"\n";
 		tt = min(tt,R2[i]);
 
 	}
@@ -88,8 +94,13 @@ int solve()
 		ll c1 = t[i]-'a';
 		ll L1 = done[c1];
 		ll temp1 = upper_bound(pos[c1].begin(), pos[c1].end(),mn) - pos[c1].begin();
+		if(!(temp1>=0 && temp1<sz(pos[c1]))){
+			cout<<"Error\n";
+			break;
+		}
 		ll mnPos = pos[c1][max(temp1,L1)];
 		ll mxPos = R2[i+1];
+// 		cout<<i+1<<" "<<mnPos+1<<" "<<mxPos+1<<"\n";
 		mx = max(mx,mxPos-mnPos);
 		mn = mnPos;
 		done[c1]++;
